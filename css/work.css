@@ -1,0 +1,31 @@
+.text {
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+
+.text h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.text p {
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+.images{
+	padding: 0 10px;
+}
+
+.images img {
+	margin: 60px auto 0 auto;
+	display: block;
+	width: 920px;
+	max-width: 100%;
+}
+
+.images img:first-of-type {
+	margin-top: 40px;
+}
+
+
