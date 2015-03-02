@@ -24,31 +24,25 @@
     <body class="english">
         <div class="content">
 
-            <p class="lang italian" onclick="Language.changeLanguage();">ENG</p>
-            <p class="lang english" onclick="Language.changeLanguage();">ITA</p>
+            <?php 
+                include 'header.php';
+            ?>
 
-            <h1>Giusy Pirrotta</h1>
-
-            <p class="navigation">
-                <a>Statement</a>
-                <a><span>/</span>Bio</a>   
-                <a><span>/</span>CV</a>                  
-                <a><span>/</span>Images</a>                
-                <a><span>/</span>Drawing</a>                
-                <a href="../index.html"><span>/</span>Moving Image</a>
-            </p>
+            <?php
+                include 'work/lightsign_rainbow/content.php'
+            ?>
 
             <div class="portfolio_links">
 
                 <div>
-                    <a href="work/lightsign_rainbow/lightsign_rainbow.html">
+                    <a href="work/lightsign_rainbow/lightsign_rainbow.php">
                         <img src="work/lightsign_rainbow/images/lightsign_rainbow_4.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
-                    <a href="work/the_quality_of_scale/the_quality_of_scale.html">
+                    <a href="work/the_quality_of_scale/the_quality_of_scale.php">
                         <img src="work/the_quality_of_scale/images/qos_7.jpg" />
                         <p>The Quality of "scale"</p>
                     </a>
