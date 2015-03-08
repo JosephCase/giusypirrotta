@@ -18,32 +18,22 @@
         <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
         <!--CSS-->
-        <link rel="stylesheet" type="text/css" href="../../CSS/reset.css?version=1.1">
-        <link rel="stylesheet" type="text/css" href="../../CSS/style.css?version=1.1">        
-        <link rel="stylesheet" type="text/css" href="../../CSS/work.css?version=1.1">
+        <link rel="stylesheet" type="text/css" href="../CSS/reset.css?version=1.1">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css?version=1.1">        
+        <link rel="stylesheet" type="text/css" href="../CSS/work.css?version=1.1">
         <!-- <link rel="stylesheet" type="text/css" href="Portfolio.css"> -->
 
         <!-- JS -->
-        <script src="../../js/language.js"></script>
+        <script src="../js/language.js"></script>
 
 
     </head>
     <body class="english">
         <div class="content">
 
-            <p class="lang italian" onclick="Language.changeLanguage();">ENG</p>
-            <p class="lang english" onclick="Language.changeLanguage();">ITA</p>
-
-            <h1><a href="../../index.php">Giusy Pirrotta</a></h1>
-
-            <p class="navigation">
-                <a>Statement</a>
-                <a><span>/</span>Bio</a>   
-                <a><span>/</span>CV</a>                  
-                <a><span>/</span>Images</a>                
-                <a><span>/</span>Drawing</a>                
-                <a href="../index.html"><span>/</span>Moving Image</a>
-            </p>
+            <?php 
+                include '../header.php';
+            ?>
 
             <div class="text english">
                 <h3>The Quality of "Scale"</h3>
@@ -80,10 +70,9 @@ The site-specific intervention, thought specifically for the gallery space, aris
                 <img src="images/qos_11.jpg" />                    
             </div>
 
-            <footer>
-                <h5>pirrotta.giusy@gmail.com</h5>
-                <p>Copyright &copy; 2015 Giusy Pirrotta</p>
-            </footer>
+            <?php 
+                include '../footer.php';
+            ?>
 
         </div>
     </body>

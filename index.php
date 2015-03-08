@@ -28,30 +28,26 @@
                 include 'header.php';
             ?>
 
-            <?php
-                include 'work/lightsign_rainbow/content.php'
-            ?>
-
             <div class="portfolio_links">
 
                 <div>
-                    <a href="work/lightsign_rainbow/lightsign_rainbow.php">
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_4.jpg" />
+                    <a href="lightsign_rainbow">
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_4.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
-                    <a href="work/the_quality_of_scale/the_quality_of_scale.php">
-                        <img src="work/the_quality_of_scale/images/qos_7.jpg" />
+                    <a href="the_quality_of_scale">
+                        <img src="the_quality_of_scale/images/qos_7.jpg" />
                         <p>The Quality of "scale"</p>
                     </a>
                 </div>
 
                 <div>
-                    <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
+                    <a href="rgb">
+                        <img src="rgb/images/rgb_home.jpg" />
+                        <p>RGB</p>
                     </a>
                 </div>
 
@@ -154,10 +150,9 @@
                 </div>
             </div>
 
-            <footer>
-                <h5>pirrotta.giusy@gmail.com</h5>
-                <p>Copyright &copy; 2015 Giusy Pirrotta</p>
-            </footer>
+             <?php 
+                include 'footer.php';
+            ?>
 
         </div>
     </body>
