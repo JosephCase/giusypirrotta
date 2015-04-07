@@ -52,99 +52,99 @@
                 </div>
 
                 <div>
+                    <a href="vanishing_point">
+                        <img src="vanishing_point/images/img03.jpg" />
+                        <p>Vanishing Point</p>
+                    </a>
+                </div>
+
+                <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
 
                 <div>
                     <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="work/lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
                         <p>Lightsign_Rainbow</p>
                     </a>
                 </div>
