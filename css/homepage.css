@@ -1,34 +1,41 @@
 
 .portfolio_links {
-	overflow: auto;
+	overflow-y: auto;
 }
 	
-.portfolio_links div {	
+.portfolio_links a {	
+	display: block;
+	position: relative;
 	float: left;
 	box-sizing: border-box;
 	padding: 10px;
+	margin-bottom: 16px;
 	width: 33%;	
+	height: 230px;
 	overflow: hidden;
 }
-
-.portfolio_links div p {
-	margin: 6px 0 0 2px;
-	line-height: 20px;
-}
-
-.portfolio_links div img {	
-	width: 100%;
-}
-
 .portfolio_links a:hover {	
 	cursor: pointer;
 }
 
+.portfolio_links a p {
+	padding: 6px 0 0 2px;
+	line-height: 20px;
+	background-color: #fff;
+	width: 100%;
+	position: absolute;
+	bottom: 0
+}
+
+.portfolio_links a img {	
+	width: 100%;
+}
+
 @media (max-width: 767px) {
-	.portfolio_links div {	
+	.portfolio_links a {	
 		width: 50%;
 	}
-	.portfolio_links div p {
+	.portfolio_links a p {
 		margin: 4px 0 0 2px;
 		font-size: 14px;
 		font-weight: 500;

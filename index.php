@@ -29,125 +29,74 @@
             ?>
 
             <div class="portfolio_links">
-
-                <div>
-                    <a href="lightsign_rainbow">
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_4.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="the_quality_of_scale">
-                        <img src="the_quality_of_scale/images/qos_7.jpg" />
-                        <p>The Quality of "scale"</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="rgb">
-                        <img src="rgb/images/rgb_home.jpg" />
-                        <p>RGB</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="vanishing_point">
-                        <img src="vanishing_point/images/img03.jpg" />
-                        <p>Vanishing Point</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a>
-                        <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                        <p>Lightsign_Rainbow</p>
-                    </a>
-                </div>
+                <a href="lightsign_rainbow">
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_4.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a href="the_quality_of_scale">
+                    <img src="the_quality_of_scale/images/qos_7.jpg" />
+                    <p>The Quality of "scale"</p>
+                </a>
+                <a href="rgb">
+                    <img src="rgb/images/rgb_home.jpg" />
+                    <p>RGB</p>
+                </a>
+                <a href="vanishing_point">
+                    <img src="vanishing_point/images/img03.jpg" />
+                    <p>Vanishing Point</p>
+                </a>
+                <a href="a_distribution_in_linear_thinking">
+                    <img src="a_distribution_in_linear_thinking/images/img-08.jpg" />
+                    <p>A disruption in linear thinking</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>
+                <a>
+                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
+                    <p>Lightsign_Rainbow</p>
+                </a>                
             </div>
 
              <?php 
