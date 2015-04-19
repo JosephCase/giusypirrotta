@@ -49,54 +49,30 @@
                     <img src="a_distribution_in_linear_thinking/images/img-08.jpg" />
                     <p>A disruption in linear thinking</p>
                 </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
+                <a href="enlighten">
+                    <img src="Enlighten/images/img-03.jpg" />
+                    <p>Enlighten</p>
                 </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
+                  <a href="reversed_light">
+                    <img src="reversed_light/images/img-09.jpg" />
+                    <p>Reversed Light</p>
                 </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
+                <a href="hawaii">
+                    <img src="hawaii/images/img-02.jpg" />
+                    <p>Hawaii</p>
                 </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>
-                <a>
-                    <img src="lightsign_rainbow/images/lightsign_rainbow_3.jpg" />
-                    <p>Lightsign_Rainbow</p>
-                </a>                
+                <a href="untitled_48">
+                    <img src="untitled_48/images/img-06.jpg" />
+                    <p>Untitled_48</p>
+                </a>  
+                <a href="crystal_ship">
+                    <img src="crystal_ship/images/img-02.jpg" />
+                    <p>Crystal Ship</p>
+                </a> 
+                <a href="the_drama_of_a_single_day">
+                    <img src="the_drama_of_a_single_day/images/img-06.jpg" />
+                    <p>The Drama of a Single day</p>
+                </a>            
             </div>
 
              <?php 
