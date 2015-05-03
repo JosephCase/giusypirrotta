@@ -44,7 +44,7 @@
             </div>
 
             <div class="text italian">
-                <h3>The Quality of Scale</h3>
+                <h3>The Quality of &quot;Scale&quot;</h3>
                 <p><b>Stanza 1</b> due tronchi du piramide in metallo, illuminati dall&rsquo;interno con lampadine colorate che rivelano un immagine visualizzata attarverso una lente posizionata sul vertice delle piramide, le immagini sono costituite da diapositive. retro proiezione su vetro 16mm colore film, no sonoro, 5'45'' trnasferita su DVD, loop,</br><b>Stanza 2</b> Panneli di legno, video proiezione 4&rsquo;45&rsquo;&rsquo;, colore, no sonoro, loop proiezione di diapositive , 80 diapositive loopslide show 80 slides,loop.</p> 
                 <p><i>&ldquo;The quality of intimacy is attached to an object in a fairly direct proportion as its size diminished in relation to oneself. The quality of publicness is attached in proportion as the size increases in relation to oneself.&rdquo;</i> (Robert Morris(1995) Continuous Project Altered Daily, The Writings of Robert Morris, in Note on Sculpture Part 2, p13, October Book, the MIT Press, Cambridge, MassachusettsRobert Morris,1995)</p>
             </div>
