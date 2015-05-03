@@ -11,8 +11,6 @@
 	padding: 10px;
 	margin-bottom: 16px;
 	width: 33%;	
-	height: 230px;
-	overflow: hidden;
 }
 .portfolio_links a:hover {	
 	cursor: pointer;
@@ -20,11 +18,6 @@
 
 .portfolio_links a p {
 	padding: 6px 0 0 2px;
-	line-height: 20px;
-	background-color: #fff;
-	width: 100%;
-	position: absolute;
-	bottom: 0
 }
 
 .portfolio_links a img {	

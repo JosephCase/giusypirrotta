@@ -18,13 +18,13 @@
 				<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
 				<!--CSS-->
-				<link rel="stylesheet" type="text/css" href="../CSS/reset.css?version=1.1">
-				<link rel="stylesheet" type="text/css" href="../CSS/style.css?version=1.1">        
-				<link rel="stylesheet" type="text/css" href="../CSS/work.css?version=1.1">
+				<link rel="stylesheet" type="text/css" href="/CSS/reset.css?version=1.1">
+				<link rel="stylesheet" type="text/css" href="/CSS/style.css?version=1.1">        
+				<link rel="stylesheet" type="text/css" href="/CSS/work.css?version=1.1">
 				<!-- <link rel="stylesheet" type="text/css" href="Portfolio.css"> -->
 
 				<!-- JS -->
-				<script src="../js/language.js"></script>
+				<script src="/js/language.js"></script>
 
 
 		</head>
@@ -32,7 +32,8 @@
 				<div class="content">
 
 						<?php 
-			                include '../header.php';
+							$root = $_SERVER['DOCUMENT_ROOT'];
+							include_once($root."/header.php");
 			            ?>
 
 						<div class="text english">
@@ -51,15 +52,11 @@
 						<div class="images">
 							<img src="images/img-01.jpg" />
 							<img src="images/img-02.jpg" />    
-							<img src="images/img-03.jpg" />    
-							<img src="images/img-04.jpg" />    
-							<img src="images/img-05.jpg" />    
-							<img src="images/img-06.jpg" />  							  
-							<img src="images/img-07.jpg" />          
+							<img src="images/img-03.jpg" />         
 						</div>
 
 						<?php 
-			                include '../footer.php';
+							include_once($root."/footer.php");
 			            ?>
 
 				</div>
