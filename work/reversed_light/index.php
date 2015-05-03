@@ -50,24 +50,12 @@
 						
 
 						<div class="images">
-							<img src="images/img-01.jpg" />
-							<img src="images/img-02.jpg" />    
-							<img src="images/img-03.jpg" />    
-							<img src="images/img-04.jpg" />    
-							<img src="images/img-05.jpg" />    
-							<img src="images/img-06.jpg" />  							  
-							<img src="images/img-07.jpg" /> 							  
-							<img src="images/img-08.jpg" />  
-							<img src="images/img-09.jpg" />							  
-							<img src="images/img-10.jpg" />	
-							<img src="images/img-11.jpg" />
-							<img src="images/img-12.jpg" />    
-							<img src="images/img-13.jpg" />    
-							<img src="images/img-14.jpg" />    
-							<img src="images/img-15.jpg" />    
-							<img src="images/img-16.jpg" />  							  
-							<img src="images/img-17.jpg" /> 							  
-							<img src="images/img-18.jpg" />        
+							<?php							
+								$files = glob('images/*.jpg');
+								foreach($files as $file) {
+									echo "<img src='".$file."' />";
+								}
+							?>      
 						</div>
 
 						<?php 

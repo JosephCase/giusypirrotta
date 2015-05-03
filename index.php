@@ -14,7 +14,7 @@
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="CSS/reset.css?version=1.0">
         <link rel="stylesheet" type="text/css" href="CSS/style.css?version=1.2">        
-        <link rel="stylesheet" type="text/css" href="CSS/homepage.css?version=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/homepage.css?version=1.1">
         <!-- <link rel="stylesheet" type="text/css" href="Portfolio.css"> -->
 
         <!-- JS -->

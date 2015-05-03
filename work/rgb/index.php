@@ -51,23 +51,12 @@
 						</div>						
 
 						<div class="images">
-							<img src="images/rgb_1.jpg" />
-							<img src="images/rgb_2.jpg" />    
-							<img src="images/rgb_3.jpg" />    
-							<img src="images/rgb_4.jpg" />    
-							<img src="images/rgb_5.jpg" />    
-							<img src="images/rgb_6.jpg" />    
-							<img src="images/rgb_7.jpg" />    
-							<img src="images/rgb_8.jpg" />
-							<img src="images/rgb_9.jpg" />
-							<img src="images/rgb_10.jpg" />  
-							<img src="images/rgb_11.jpg" />   
-							<img src="images/rgb_12.jpg" />     
-							<img src="images/rgb_13.jpg" />    
-							<img src="images/rgb_14.jpg" />    
-							<img src="images/rgb_15.jpg" />    
-							<img src="images/rgb_16.jpg" />    
-							<img src="images/rgb_17.jpg" />                  
+							<?php							
+								$files = glob('images/*.jpg');
+								foreach($files as $file) {
+									echo "<img src='".$file."' />";
+								}
+							?>      
 						</div>
 
 						<?php 

@@ -56,14 +56,12 @@
 						
 
 						<div class="images">
-							<img src="images/img01.jpg" />
-							<img src="images/img02.jpg" />    
-							<img src="images/img03.jpg" />    
-							<img src="images/img04.jpg" />    
-							<img src="images/img05.jpg" />    
-							<img src="images/img06.jpg" />    
-							<img src="images/img07.jpg" />
-							<!-- images 8 wrong size -->         
+							<?php							
+								$files = glob('images/*.jpg');
+								foreach($files as $file) {
+									echo "<img src='".$file."' />";
+								}
+							?>      
 						</div>
 
 						<?php 

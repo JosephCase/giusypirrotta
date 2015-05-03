@@ -49,19 +49,17 @@
 							<p>veduta dell&rsquo;installazione Crypt gallery Londra</br>veduta dell&rsquo;installazione Lethaby Gallery Londra</p>
 							<p>L&rsquo;installazione comprende due proiezioni di diapositive in loop che interagiscono con la luce proveniente da altri due proiettori di diapositive. Il focus del lavoro &egrave; relativo all&rsquo;aspetto evanescente dell&rsquo;immagine proiettata in quanto luce in relazione all&rsquo;aspetto transitorio della vita.</br>Le immagino sono 160 frame estratti da 7 film nei quali i protagonisti attraversano crisi esistenziali o si interrogano sulla volont&agrave; di interrompere la propria esistenza. La selezione di immagini &egrave; accompagnata da un editing sincronizzato delle diverse colonne sonore. Alle due proiezioni di immagini sono sovrapposte due proiezioni di luce in forma e consistenza diversa emesse da due proiettori di diapositive che modificano e interagiscono l&rsquo; esperienza dello spettatore, rompendo il limite della proiezione e sottolineando l&rsquo;effimeralit&agrave; e il temporaneo aspetto dell&rsquo;immagine proiettata come sorgente di luce dipendente dall&rsquo;attrezzatura usata.</p>
 							<p>Film usati</br>Taste of cherry (1997) Abbas Kiarostamy 21 grams (2003) Alejandro Gonzalez Inarritu Interiors (1978) Woody Allen</br>Le diable probablement (1077) Robert Bresson Mishima: Life in four Chapters (1985) Paul Scharader Virgin Suicides (1999) Sofia Coppola Nostalgia (1983) Andrei Tarkovsky</p>
-						</div>						
+						</div>		
 
 						<div class="images">
-							<img src="images/img-01.jpg" />
-							<img src="images/img-02.jpg" />    
-							<img src="images/img-03.jpg" />    
-							<img src="images/img-04.jpg" />    
-							<img src="images/img-05.jpg" />    
-							<img src="images/img-06.jpg" />    
-							<img src="images/img-07.jpg" />   
-							<img src="images/img-08.jpg" />        
+							<?php							
+								$files = glob('images/*.jpg');
+								foreach($files as $file) {
+									echo "<img src='".$file."' />";
+								}
+							?>      
 						</div>
-
+						
 						<?php
 							include_once($root."/footer.php");
 			            ?>
