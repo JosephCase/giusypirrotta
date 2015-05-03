@@ -4,6 +4,14 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 	font-weight: 600;
 }
 
+i {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
 a {
 	cursor: pointer;
 	text-decoration: none;

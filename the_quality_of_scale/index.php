@@ -36,23 +36,16 @@
             ?>
 
             <div class="text english">
-                <h3>The Quality of "Scale"</h3>
-                <p>Steal trunk of pyramids, magnifying lens, 35mm and medium format slides.
-16mm color film, no sound, 5'45'' transferred DVD, loop, back projection on glass slide show 80 slides,loop, video projection 4'45'' color, loop</br>exhibition view at Muratcentoventidue Gallery
-</p> 
+                <h3>The Quality of &quot;Scale&quot;</h3>
+                <p><i>exhibition view at Muratcentoventidue Gallery</br>Steel trunk of pyramids, magnifying lens, 35mm and medium format slides. 16mm color film, no sound, 5'45'' transferred DVD, loop, back projection on glass slide show 80 slides,loop, video projection 4'45'' color, loop</i></p>
                 <p>The quality of Scale explores the relationship between the notion of public/intimacy and monument/object especially referring to the quality of sculpture and its relationship with exhibition space, viewer and light.</p>
-                <p>“The quality of intimacy is attached to an object in a fairly direct proportion as its size diminished in relation to oneself. The quality of publicness is attached in proportion as the size increases in relation to oneself” 
-( Robert Morris , Continuous Project Altered Daily, The Writings of Robet Morris, in Note on Sculpture Part 2, p13, October Book, the MIT Press, Cambridge, Massachusetts, 1995)</p>
-                <p>Robert Morris defines part of these concepts on his reflections about sculpture analyzing the space between subject and object.
-A smaller object needs less visual space space around itself determining a more intimate relationship with the viewer rather than a larger one that in order to be entirely seen in its whole necessarily requires the one to keep some distance. That establishes another kind of relationship between the viewer and the exhibition space . In this sense space does not exist for intimate object and in these terms it is possible to define the difference between Monument an and Object.</br>
-Moreover , in the simpler polyhedrons such as cubes and pyramids , it is not visually needed to move around their structure to understand the configuration. They give to the viewer an immediate sense of their shape due to their simplicity. This immediate sense of awareness in their spatial extension involves perceptual theories of “constancy of shape”, “tendencies towards simplicity”, memory traces and physiological factors regards the nature of binocular parallax vision and the structure of retina and brain.
-The site-specific intervention, thought specifically for the gallery space, arises from the confrontation with these considerations as a result of the realization of sculptural structures combined within the exhibition space and the fruition of light and image.</p>
+                <p>&ldquo;The quality of intimacy is attached to an object in a fairly direct proportion as its size diminished in relation to oneself. The quality of publicness is attached in proportion as the size increases in relation to oneself&rdquo; ( Robert Morris , Continuous Project Altered Daily, The Writings of Robet Morris, in Note on Sculpture Part 2, p13, October Book, the MIT Press, Cambridge, Massachusetts, 1995)</p>
             </div>
 
             <div class="text italian">
-                <h3>LightSign_Rainbow</h3>
-                <p>Steel box, 99 light bulbs, adhesive sticker, spray painting, 120x50x15cm</br>2014 Installation view at Premio Cairo, Museo della Permanente, Milan.</p> 
-                <p>LightSign_Rinbow &egrave; la prima di una serie di insegne luminose e scatole ottiche dove &egrave; esaminato il rapporto tra la consistenza della luce e la percezione del colore attraverso la massa di un corpo scultoreo con lo scopo di dare forma all'aspetto evanescente della luce e la sua immaterialit&agrave;.</p>
+                <h3>The Quality of Scale</h3>
+                <p><b>Stanza 1</b> due tronchi du piramide in metallo, illuminati dall&rsquo;interno con lampadine colorate che rivelano un immagine visualizzata attarverso una lente posizionata sul vertice delle piramide, le immagini sono costituite da diapositive. retro proiezione su vetro 16mm colore film, no sonoro, 5'45'' trnasferita su DVD, loop,</br><b>Stanza 2</b> Panneli di legno, video proiezione 4&rsquo;45&rsquo;&rsquo;, colore, no sonoro, loop proiezione di diapositive , 80 diapositive loopslide show 80 slides,loop.</p> 
+                <p><i>&ldquo;The quality of intimacy is attached to an object in a fairly direct proportion as its size diminished in relation to oneself. The quality of publicness is attached in proportion as the size increases in relation to oneself.&rdquo;</i> (Robert Morris(1995) Continuous Project Altered Daily, The Writings of Robert Morris, in Note on Sculpture Part 2, p13, October Book, the MIT Press, Cambridge, MassachusettsRobert Morris,1995)</p>
             </div>
             
 
