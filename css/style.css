@@ -70,13 +70,14 @@ footer p {
 	position: absolute;
 	right: 16px;
 	top: 16px;
-	padding: 3px;
-	border: 1px solid #fff;
+	padding: 2px;
+	border: 2px solid #fff;
 	font-size: 17px;
 	font-weight: 600;
 }
 .lang:hover {
-	border-color: #000;
+	/*border-color: #000;*/
+	border-bottom-color: #000;
 }
 
 body.italian .english {
