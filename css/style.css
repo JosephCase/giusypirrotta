@@ -72,6 +72,8 @@ footer p {
 	top: 16px;
 	padding: 3px;
 	border: 1px solid #fff;
+	font-size: 17px;
+	font-weight: 600;
 }
 .lang:hover {
 	border-color: #000;
