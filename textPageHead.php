@@ -7,12 +7,12 @@
     <!--Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="CSS/reset.css?version=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css?version=1.2">        
-    <link rel="stylesheet" type="text/css" href="CSS/textPage.css?version=1.0">
 
-    <!-- JS -->
-    <script src="js/language.js"></script>
+    <?php
+        echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}CSS/reset.css?version=1.1'>";
+        echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}CSS/style.css?version=1.1'>";
+        echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}CSS/textPage.css?version=1.1'>";
+        echo "<script src='{$rootHelper}js/language.js'></script>";
+    ?>
 
 </head>

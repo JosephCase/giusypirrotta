@@ -1,14 +1,17 @@
+<!--Helpers-->
+<?php 
+    include_once '../../helpers/rootResolver.php';
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
-		$root = $_SERVER['DOCUMENT_ROOT'];
-		include_once($root."/workHead.php");
+		$root = $_SERVER['DOCUMENT_ROOT'].$rootHelper;
+		include_once($root."workHead.php");
     ?>
 	<body class="english">
 		<div class="content">
 
 			<?php 
-				$root = $_SERVER['DOCUMENT_ROOT'];
-				include_once($root."/header.php");
+				include_once($root."header.php");
             ?>
 
 			<?php 
@@ -25,7 +28,7 @@
 			</div>
 			
 			<?php
-				include_once($root."/footer.php");
+				include_once($root."footer.php");
             ?>
 
 		</div>
