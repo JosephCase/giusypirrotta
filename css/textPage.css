@@ -18,9 +18,8 @@ h3 {
 	font-weight: 500;
 }
 h4 {
-	margin-top: 40px;
-	margin-bottom: 10px;
-	font-size: 20px;
+	margin: 0;
+	font-size: 75px;
 }
 p {
 	font-size: 17px;
@@ -32,4 +31,15 @@ p.text {
 }
 footer {
 	margin-top: 100px;
+}
+
+@media (max-width: 826px) {
+	h4 {
+		font-size: 50px;
+	}
+}
+@media (max-width: 620px) {
+	h4 {
+		font-size: 32px;
+	}
 }

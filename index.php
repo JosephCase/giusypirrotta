@@ -36,7 +36,7 @@
             </a>
             <a href="work/the_quality_of_scale">
                 <img src="work/the_quality_of_scale/mainImage.jpg" />
-                <p>The Quality of "scale"</p>
+                <p>The Quality of "Scale"</p>
             </a>
             <a href="work/rgb">
                 <img src="work/rgb/mainImage.jpg" />

@@ -10,6 +10,7 @@
 	echo "<a href='{$rootHelper}statement.php'>Statement</a>";
 	echo "<a href='{$rootHelper}bio.php'><span>/</span>Bio</a>";   
 	echo "<a href='{$rootHelper}cv.php'><span>/</span>CV</a>";
+	echo "<a href='{$rootHelper}moving-image'><span>/</span>Moving Image</a>";
 ?>
                   
 	<!-- <a><span>/</span>Images</a>                

@@ -12,9 +12,6 @@
             <?php 
                 include 'header.php';
             ?>
-
-            <h2>Statement</h2>
-
             <!--English-->
             <p class="text english">My work focuses on the study light and its relationship with architecture and sculpture. My research is strictly related to the analysis of the nature of moving image and its ephemeral status as light projected in relation to optical perception mechanisms and different display contexts. I focus my interest on the consistency of light and its sculptural quality against the paradox of its ephemerality. This relationship is determined by its interaction with architectural space as well as its dependency on the equipment used from production to fruition.</p>
             <p class="text english">My inquiry examines the limit of the frame and how light can interfere between the representational frame, within which images are contained, and our frame of vision. How can the act of perceiving constitute the work exhibited? Is light a medium able to break the frame of visual perception?</br>My intent is to shape light in order to create a tactile experience of an evanescent phenomenon through the interaction of the projected image/light with sculpture and architectural space. My interventions aim to question the condition of seeing, pointing out the ambiguity between the architecture of moving image, the relationship with the physical installation space and the viewer experience.</p>

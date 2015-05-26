@@ -13,13 +13,6 @@
                 include 'header.php';
             ?>
 
-            <h2>CV</h2>
-            <h2 class="name">GIUSY PIRROTTA</h2>
-            <h3>REGGIO CALABRIA ITALY 1982<h3>
-            <h3>Lives and works in London</h3>
-            <h3>pirrottagiusy@gmail.com</h3>
-            <h3>+44(0)7866600214</h3>
-
             <h4>QUALIFICATIONS</h4>
             <p>Ongoing - PHD in Moving Image Studies at UCA, University for the Creative Arts, Farnham</p>
             <p>Master in Fine Art, Central Saint Martin College of Art &amp; Design, London</p>
@@ -34,8 +27,7 @@
             <p><b>2006</b> La fotografia come arte, l'arte come fotografia (The photography as art, art as photography), residency award, Daniel Spoerri Foundation, Grosseto, Italy, Curated by Fiammetta Strigoli,Cassero Senese , Grosseto</p>
 
             <h4>SOLO SHOWS</h4>  
-            <p><b>2014</b></p>
-            <p>Long time ago when the hearth was flat, Galleria Massimo de Luca, curated by Alice Ginaldi, Venice</p>
+            <p><b>2014</b> Long time ago when the hearth was flat, Galleria Massimo de Luca, curated by Alice Ginaldi, Venice</p>
             <p>The quality of Scale, Murata Centoventidue Contemporary Art, curated by Angela Gonnella, Bari</p>
 
             <h4>SELECTED GROUP SHOWS</h4>
@@ -54,10 +46,8 @@
             <p>Life is elsewhere, Crypt gallery, Curated by Oliver Guy Watkings, London</p>
             
             <h4>PROFESSIONAL TRAINING</h4>
-            <p><b>2013</b></p> 
-            <p>PresTech film laboratories, 35mm 16mm film restoration, grading, TK, printing, processing</p>
-            <p><b>2012</b></p>
-            <p>16 mm film specialist at Central Saint Martin College of Art &amp; Design Film and video department
+            <p><b>2013</b> PresTech film laboratories, 35mm 16mm film restoration, grading, TK, printing, processing</p>
+            <p><b>2012</b> 16 mm film specialist at Central Saint Martin College of Art &amp; Design Film and video department
 
             <?php 
                 include 'footer.php';
