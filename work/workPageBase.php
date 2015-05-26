@@ -12,11 +12,11 @@
 
 			<?php 
 				include_once($root."header.php");
-            ?>
+            ?>	
 
 			<?php 
-				include_once("pagetext.php");
-            ?>	
+				include_once("pageHeading.php");
+            ?>
 
 			<div class="images">
 				<?php							
@@ -26,6 +26,10 @@
 					}
 				?>      
 			</div>
+
+			<?php 
+				include_once("pagetext.php");
+            ?>
 			
 			<?php
 				include_once($root."footer.php");
