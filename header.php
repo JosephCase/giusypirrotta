@@ -13,7 +13,7 @@
 	echo "<a href='{$rootHelper}cv.php'>CV</a><span>/</span>";
 	echo "<a href='{$rootHelper}statement.php'>Statement</a><span>/</span>";	
 	echo "<a href='{$rootHelper}bio.php'>Bio</a><span>/</span>";
-	echo "<a href='{$rootHelper}contact'>Contact</a>";
+	echo "<a href='{$rootHelper}contact.php'>Contact</a>";
 ?>
                   
 	<!-- <a><span>/</span>Images</a>                

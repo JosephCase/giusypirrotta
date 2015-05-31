@@ -22,7 +22,7 @@ a {
 	/*max-width: 960px;*/
 	width: 100%;	
 	box-sizing: border-box;
-	padding: 60px 10px 0 10px;
+	padding-top: 60px;
 	margin: 0 auto;
 	position: relative;
 }

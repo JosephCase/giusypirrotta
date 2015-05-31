@@ -10,8 +10,15 @@
 	/*box-sizing: border-box;*/
 	margin: 1%;
 	/*margin-bottom: 16px;*/
-	width: 31.33%;	
+	width: 30.66%;	
 }
+.portfolio_links a:nth-of-type(3n - 2) {	
+	margin-left: 2%	
+}
+.portfolio_links a:nth-of-type(3n) {	
+	margin-right: 2%	
+}
+
 .portfolio_links a:hover {	
 	cursor: pointer;
 }
@@ -44,11 +51,18 @@
 
 @media (max-width: 767px) {
 	.portfolio_links a {	
-		width: 50%;
+		width: 47%;
 	}
-	.portfolio_links a p {
-		margin: 4px 0 0 2px;
-		font-size: 14px;
-		font-weight: 500;
+	.portfolio_links a:nth-of-type(3n - 2) {	
+		margin-left: 1%	
+	}
+	.portfolio_links a:nth-of-type(3n) {	
+		margin-right: 1%	
+	}
+	.portfolio_links a:nth-of-type(2n - 1) {	
+		margin-left: 2%	
+	}
+	.portfolio_links a:nth-of-type(2n) {	
+		margin-right: 2%	
 	}
 }
