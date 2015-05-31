@@ -45,18 +45,12 @@ h1 {
 	top: 0;
 	display: inline-block;
 	position: relative;
-	margin: 0 18px;
-	border-bottom: 2px solid #fff;
-	padding-bottom: 0;
-	margin-bottom: 4px;
-	transition: top 0.2s, padding-bottom 0.2s, border-bottom 0.2s, margin-bottom 0.2s;
+	margin: 0 18px;	
+	transition: top 0.1s;
 }
 
 .navigation a:hover {
 	top: -4px;
-	border-bottom: 2px solid #000;
-	padding-bottom: 4px;
-	margin-bottom: 0;	
 }
 
 
@@ -77,17 +71,14 @@ footer p {
 
 .lang {
 	cursor: pointer;
-	position: absolute;
-	right: 16px;
-	top: 16px;
-	padding: 2px;
-	border: 2px solid #fff;
+	position: fixed;
+	right: 32px;
+	top: 0;
+	padding: 4px;
 	font-size: 17px;
 	font-weight: 600;
-}
-.lang:hover {
-	/*border-color: #000;*/
-	border-bottom-color: #000;
+	padding-top: 20px;
+	/*background-color: rgba(300,300,300,0.6);*/
 }
 
 body.italian .english {

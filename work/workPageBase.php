@@ -14,9 +14,11 @@
 				include_once($root."header.php");
             ?>	
 
+            <div class="workDetail">
 			<?php 
 				include_once("pageHeading.php");
             ?>
+            </div>
 
 			<div class="images">
 				<?php							
@@ -27,9 +29,12 @@
 				?>      
 			</div>
 
+
+            <div class="workDescription">
 			<?php 
 				include_once("pagetext.php");
             ?>
+            </div>
 			
 			<?php
 				include_once($root."footer.php");

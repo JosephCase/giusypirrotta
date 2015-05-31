@@ -32,47 +32,69 @@
         <div class="portfolio_links">
             <a href="work/lightsign_rainbow">
                 <img src="work/lightsign_rainbow/mainImage.jpg" />
-                <p>Lightsign_Rainbow</p>
+                <div class="overlay">
+                    <p>Lightsign_Rainbow</p>
+                </div>
             </a>
             <a href="work/the_quality_of_scale">
                 <img src="work/the_quality_of_scale/mainImage.jpg" />
-                <p>The Quality of "Scale"</p>
+                <div class="overlay">
+                    <p>The Quality of "Scale"</p>
+                </div>
             </a>
             <a href="work/rgb">
                 <img src="work/rgb/mainImage.jpg" />
-                <p>RGB</p>
+                <div class="overlay">
+                    <p>RGB</p>
+                </div>
             </a>
             <a href="work/vanishing_point">
                 <img src="work/vanishing_point/mainImage.jpg" />
-                <p>Vanishing Point</p>
+                <div class="overlay">
+                    <p>Vanishing Point</p>
+                </div>
             </a>
             <a href="work/a_distribution_in_linear_thinking">
                 <img src="work/a_distribution_in_linear_thinking/mainImage.jpg" />
-                <p>A disruption in linear thinking</p>
+                <div class="overlay">
+                    <p>A disruption in linear thinking</p>
+                </div>
             </a>
             <a href="work/enlighten">
                 <img src="work/Enlighten/mainImage.jpg" />
-                <p>Enlighten</p>
+                <div class="overlay">
+                    <p>Enlighten</p>
+                </div>
             </a>
               <a href="work/reversed_light">
                 <img src="work/reversed_light/mainImage.jpg" />
-                <p>Reversed Light</p>
+                <div class="overlay">
+                    <p>Reversed Light</p>
+                </div>
             </a>
             <a href="work/hawaii">
                 <img src="work/hawaii/mainImage.jpg" />
-                <p>Hawaii</p>
+                <div class="overlay">
+                    <p>Hawaii</p>
+                </div>
             </a>
             <a href="work/untitled_48">
                 <img src="work/untitled_48/mainImage.jpg" />
-                <p>Untitled_48</p>
+                <div class="overlay">
+                    <p>Untitled_48</p>
+                </div>
             </a>  
             <a href="work/crystal_ship">
                 <img src="work/crystal_ship/mainImage.jpg" />
-                <p>Crystal Ship</p>
+                <div class="overlay">
+                    <p>Crystal Ship</p>
+                </div>
             </a>
             <a href="work/the_drama_of_a_single_day">
                 <img src="work/the_drama_of_a_single_day/mainImage.jpg" />
-                <p>The Drama of a Single day</p>
+                <div class="overlay">
+                    <p>The Drama of a Single day</p>
+                </div>
             </a>            
         </div>
 

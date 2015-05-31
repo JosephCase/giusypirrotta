@@ -7,10 +7,12 @@
 
 <p class="navigation">
 <?php 
+	echo "<a href='{$rootHelper}'>Works</a><span>/</span>";
+	echo "<a href='{$rootHelper}moving-image'>Moving Image</a><span>/</span>";
+	echo "<a href='{$rootHelper}images'>Images</a><span>/</span>";
+	echo "<a href='{$rootHelper}cv.php'>CV</a><span>/</span>";
 	echo "<a href='{$rootHelper}statement.php'>Statement</a><span>/</span>";	
 	echo "<a href='{$rootHelper}bio.php'>Bio</a><span>/</span>";
-	echo "<a href='{$rootHelper}cv.php'>CV</a><span>/</span>";
-	echo "<a href='{$rootHelper}moving-image'>Moving Image</a><span>/</span>";
 	echo "<a href='{$rootHelper}contact'>Contact</a>";
 ?>
                   
