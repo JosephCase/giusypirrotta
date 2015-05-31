@@ -38,17 +38,27 @@ h1 {
 	line-height: 20px;
 	font-size: 18px;
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 56px;
 }
 
 .navigation a {
+	top: 0;
 	display: inline-block;
-	padding: 0 9px;
+	position: relative;
+	margin: 0 18px;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 0;
+	margin-bottom: 4px;
+	transition: top 0.2s, padding-bottom 0.2s, border-bottom 0.2s, margin-bottom 0.2s;
 }
 
-.navigation a span{
-	padding-right: 20px;
+.navigation a:hover {
+	top: -4px;
+	border-bottom: 2px solid #000;
+	padding-bottom: 4px;
+	margin-bottom: 0;	
 }
+
 
 
 footer {
@@ -88,7 +98,7 @@ body.english .italian {
 		display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
 	h1 {
 		font-size: 60px;
 	}
