@@ -51,7 +51,7 @@
                     <p>Vanishing Point</p>
                 </div>
             </a>   
-            <a>
+            <a href="chroma">
                 <img src="chroma/mainImage.jpg" />
                 <div class="overlay">
                     <p>Chroma</p>
