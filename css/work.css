@@ -36,7 +36,7 @@ div.content {
 	padding: 0 10px;
 }
 
-.images img {
+.images img, .images video {
 	margin: 60px auto 0 auto;
 	display: block;
 	width: 100%;

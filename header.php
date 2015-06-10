@@ -15,8 +15,11 @@
 	echo "<a href='{$rootHelper}bio.php'>Bio</a><span>/</span>";
 	echo "<a href='{$rootHelper}contact.php'>Contact</a>";
 ?>
-                  
-	<!-- <a><span>/</span>Images</a>                
-	<a><span>/</span>Drawing</a>                     
-	<a><span>/</span>Moving Image</a> -->
 </p>
+
+
+<?php 
+	if (strpos(dirname($_SERVER['PHP_SELF'], 'moving-image') !== false) {
+    	echo 'true';
+	}
+?>
