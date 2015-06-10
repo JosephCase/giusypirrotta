@@ -16,7 +16,7 @@
 
             <div class="workDetail">
 			<?php 
-				require_once("pageHeading.php");
+				include_once("pageHeading.php");
             ?>
             </div>
 
@@ -37,7 +37,7 @@
             </div>
 			
 			<?php
-				include_once($root."footer.php");
+				require_once($root."footer.php");
             ?>
 
 		</div>
