@@ -1,11 +1,11 @@
 <!--Helpers-->
 <?php 
     require_once '../../helpers/rootResolver.php';
+    $pageType = 'workPage';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
-		$root = $_SERVER['DOCUMENT_ROOT'].$rootHelper;
-		require_once($root."workHead.php");
+		require_once($root."head.php");
     ?>
 	<body class="english">
 		<div class="content">

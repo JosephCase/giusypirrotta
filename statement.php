@@ -1,16 +1,17 @@
 <!--Helpers-->
 <?php 
-    include_once 'helpers/rootResolver.php';
+    require_once 'helpers/rootResolver.php';
+    $pageType = 'textPage';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     
     <?php 
-        include 'textPageHead.php';
+        require_once $root.'head.php';
     ?>  
     <body class="english">
         <div class="content"> 
             <?php 
-                include 'header.php';
+                require_once $root.'header.php';
             ?>
             <!--English-->
             <p class="text english">My work focuses on the study light and its relationship with architecture and sculpture. My research is strictly related to the analysis of the nature of moving image and its ephemeral status as light projected in relation to optical perception mechanisms and different display contexts. I focus my interest on the consistency of light and its sculptural quality against the paradox of its ephemerality. This relationship is determined by its interaction with architectural space as well as its dependency on the equipment used from production to fruition.</p>
@@ -22,7 +23,7 @@
             <p class="text italian">Il mio intento &egrave; quello di dare forma alla luce in modo da creare un esperienza tattile di un fenomeno evanescente. Lo scopo dei miei interventi &egrave; quello di mettere in discussione le condizioni del vedere evidenziando la relazione ambigua tra l&rsquo;architettura dell&rsquo;immagine in movimento, il contesto espositivo come spazio fisico installativo e l&rsquo;esperienza dello spettatore.</p>
 
             <?php 
-                include 'footer.php';
+                require_once $root.'footer.php';
             ?>
         </div>
     </body>

@@ -16,10 +16,3 @@
 	echo "<a href='{$rootHelper}contact.php'>Contact</a>";
 ?>
 </p>
-
-
-<?php 
-	if (strpos(dirname($_SERVER['PHP_SELF'], 'moving-image') !== false) {
-    	echo 'true';
-	}
-?>

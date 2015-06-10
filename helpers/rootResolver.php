@@ -4,4 +4,6 @@
 	} else {
 		$rootHelper = "/";
 	}
+	
+    $root = $_SERVER['DOCUMENT_ROOT'].$rootHelper;
 ?>

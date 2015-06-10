@@ -1,22 +1,22 @@
 <!--Helpers-->
 <?php 
-    include_once '../../helpers/rootResolver.php';
+    require_once '../../helpers/rootResolver.php';
+    $pageType = 'workPage';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
-		$root = $_SERVER['DOCUMENT_ROOT'].$rootHelper;
-		include_once($root."workHead.php");
+		require_once($root."head.php");
     ?>
 	<body class="english">
 		<div class="content">
 
 			<?php 
-				include_once($root."header.php");
+				require_once($root."header.php");
             ?>	
 
             <div class="workDetail">
 			<?php 
-				include_once("pageHeading.php");
+				require_once("pageHeading.php");
             ?>
             </div>
 
