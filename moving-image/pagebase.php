@@ -15,7 +15,8 @@
             ?>	
 
             <div class="images">
-           `	<video id="vid1" onclick="Video.playVideo(this);">
+            	<!-- <video id="vid1"> -->
+           `	<video id="vid1" controls>
 					<source src="video.mp4" type="video/mp4">
 					<source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">

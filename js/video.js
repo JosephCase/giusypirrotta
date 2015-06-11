@@ -5,6 +5,13 @@
 
 var Video = new function () {
 	console.log("VIDEO2");
+
+	var vid1 = document.getElementById('vid1');
+	console.log(vid1);
+	vid1.addEventListener("click", function() {
+		playVideo(this);
+	}, false);
+
 	this.playVideo = function(video){
 		console.log("play video");
 		if (video.requestFullscreen) {
