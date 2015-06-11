@@ -16,7 +16,13 @@
 
             <div class="images">
             	<!-- <video id="vid1"> -->
-           `	<video id="vid1" controls>
+           `	<video controls>
+					<source src="video.mp4" type="video/mp4">
+					<source src="video.ogg" type="video/ogg">
+					<source src="video.webm" type="video/webm">
+					Your browser does not support the video tag.
+				</video>
+           `	<video controls>
 					<source src="video.mp4" type="video/mp4">
 					<source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">
