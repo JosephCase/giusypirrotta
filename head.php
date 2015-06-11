@@ -16,6 +16,7 @@
         echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}CSS/{$pageType}.css?version=1.1'>";
 
         echo "<script src='{$rootHelper}js/language.js'></script>";
+        echo "<script src='{$rootHelper}js/video.js'></script>";
     ?>
 
     <!-- JS -->
