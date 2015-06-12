@@ -21,51 +21,57 @@ function video(video) {
 
 	function playVideo() {
 
-		console.log("playVideo");
+		console.log('playVideo');
 		console.log(video);
 
-		video.removeEventListener("click", me.playVideo);
+		video.removeEventListener('click', playVideo);
 
-		console.log("play video");
 		if (video.requestFullscreen) {
 			console.log('normal');
 			video.requestFullscreen();
 			video.play();
 		} else if (video.msRequestFullscreen) {
 			console.log('ms');
+			video.setAttribute('controls', 'true');
 			video.msRequestFullscreen();
-			video.setAttribute("controls", "true");
 			video.play();
 		} else if (video.mozRequestFullScreen) {
 			console.log('moz');
+			video.setAttribute('controls', 'true');
 			video.mozRequestFullScreen();
+			video.play();
 		} else if (video.webkitRequestFullScreen) {
 			console.log('webkit');
+			video.setAttribute('controls', 'true');
 			video.webkitRequestFullScreen();
 			video.play();
 		} else {
 			console.log('none worked');
 		}
 
-		video.addEventListener("mozfullscreenchange",function(){
-			var fullScreen = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen;
-    		if (fullScreen) {
-    			video.addEventListener("click", me.playVideo);
-    		}
-		}, false);
 
-		video.addEventListener("webkitfullscreenchange",function(){
-			var state = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen;
-    		if (fullScreen) {
-    			video.addEventListener("click", me.playVideo);
-    		}
-		}, false);
+		// document.addEventListener("fullscreenchange", onMinimize, false);
+		document.addEventListener("MSFullscreenChange", onMinimize, false);
+		document.addEventListener("webkitfullscreenchange", onMinimize, false);
+		document.addEventListener("mozfullscreenchange", onMinimize, false);   
+
+		// video.addEventListener('fullscreenchange', onMinimize);
+		// video.addEventListener('mozfullscreenchange', onMinimize);
+		// video.addEventListener('webkitfullscreenchange', onMinimize);
 	};
 
-	//add this later
-	// loop through videos and create a video object for each
-	// this.checkFullScreen = function(e) {
-
-	// }
-
+	function onMinimize() {
+		console.log('onMinimize');
+		// console.log(document.msFullscreenElement);
+		// console.log(document.webkitFullscreenElement); -- only supported in chrome	
+		// console.log(document.webkitCurrentFullScreenElement);		
+		// console.log(document.mozFullScreenElement);
+		// // var fullScreen = document.msFullscreenElement || document.mozFullScreen || document.webkitIsFullScreen;
+		if (!document.msFullscreenElement && !document.webkitCurrentFullScreenElement && !document.mozFullScreenElement) {
+			console.log('minimized');
+			video.pause();
+			video.removeAttribute('controls');
+			video.addEventListener('click', playVideo);
+		}		
+	}
 };

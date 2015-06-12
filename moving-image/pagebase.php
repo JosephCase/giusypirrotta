@@ -3,6 +3,7 @@
     require_once '../../helpers/rootResolver.php';
     $pageType = 'workPage';
 ?>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
 		require_once($root."head.php");
@@ -16,13 +17,13 @@
 
             <div class="images">
             	<!-- <video id="vid1"> -->
-           `	<video controls>
+           `	<video>
 					<source src="video.mp4" type="video/mp4">
 					<source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">
 					Your browser does not support the video tag.
 				</video>
-           `	<video controls>
+           `	<video>
 					<source src="video.mp4" type="video/mp4">
 					<source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">

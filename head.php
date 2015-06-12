@@ -19,6 +19,5 @@
         echo "<script src='{$rootHelper}js/video.js'></script>";
     ?>
 
-    <!-- JS -->
 
 </head>
