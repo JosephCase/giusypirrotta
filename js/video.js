@@ -50,23 +50,13 @@ function video(video) {
 		}
 
 
-		// document.addEventListener("fullscreenchange", onMinimize, false);
 		document.addEventListener("MSFullscreenChange", onMinimize, false);
 		document.addEventListener("webkitfullscreenchange", onMinimize, false);
 		document.addEventListener("mozfullscreenchange", onMinimize, false);   
-
-		// video.addEventListener('fullscreenchange', onMinimize);
-		// video.addEventListener('mozfullscreenchange', onMinimize);
-		// video.addEventListener('webkitfullscreenchange', onMinimize);
 	};
 
 	function onMinimize() {
 		console.log('onMinimize');
-		// console.log(document.msFullscreenElement);
-		// console.log(document.webkitFullscreenElement); -- only supported in chrome	
-		// console.log(document.webkitCurrentFullScreenElement);		
-		// console.log(document.mozFullScreenElement);
-		// // var fullScreen = document.msFullscreenElement || document.mozFullScreen || document.webkitIsFullScreen;
 		if (!document.msFullscreenElement && !document.webkitCurrentFullScreenElement && !document.mozFullScreenElement) {
 			console.log('minimized');
 			video.pause();
