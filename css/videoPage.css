@@ -1,0 +1,23 @@
+.content {
+	width: 96%;
+	margin: auto;
+}
+.videoContent {
+	overflow-y: auto;
+}
+video {
+	/*float: left;*/
+	display: block;
+	margin: auto;
+	width: 60%;
+	/*margin-right: 2%*/
+}
+.text {
+	/*float: left;*/
+	width: 60%;
+	margin: auto;
+}
+h3 {
+	font-size: 19px;
+	margin-bottom: 20px;
+}

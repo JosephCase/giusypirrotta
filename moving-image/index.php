@@ -42,7 +42,7 @@
                         <p>Chroma</p>
                     </div>
                 </a>   
-                <a>
+                <a href="enlighten">
                     <img src="enlighten/mainImage.jpg" />
                     <div class="overlay">
                         <p>Enlighten</p>
