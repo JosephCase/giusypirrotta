@@ -6,16 +6,23 @@
 	overflow-y: auto;
 }
 video {
-	/*float: left;*/
-	display: block;
-	margin: auto;
-	width: 60%;
-	/*margin-right: 2%*/
+	float: left;
+	width: 49%;
+	margin-top: 2%;
+}
+video:hover {
+	cursor: pointer;
+}
+img {
+	float: left;
+	margin-top: 2%;
+	width: 49%;
+}
+img:nth-of-type(2n - 1) {
+	margin-left: 2%;
 }
 .text {
-	/*float: left;*/
-	width: 60%;
-	margin: auto;
+	margin-top: 50px;
 }
 h3 {
 	font-size: 19px;

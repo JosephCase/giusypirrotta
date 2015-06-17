@@ -29,22 +29,22 @@ function video(video) {
 		if (video.requestFullscreen) {
 			console.log('normal');
 			video.requestFullscreen();
-			// video.play();
+			video.play();
 		} else if (video.msRequestFullscreen) {
 			console.log('ms');
-			// video.setAttribute('controls', 'true');
+			video.setAttribute('controls', 'true');
 			video.msRequestFullscreen();
-			// video.play();
+			video.play();
 		} else if (video.mozRequestFullScreen) {
 			console.log('moz');
-			// video.setAttribute('controls', 'true');
+			video.setAttribute('controls', 'true');
 			video.mozRequestFullScreen();
-			// video.play();
+			video.play();
 		} else if (video.webkitRequestFullScreen) {
 			console.log('webkit');
-			// video.setAttribute('controls', 'true');
+			video.setAttribute('controls', 'true');
 			video.webkitRequestFullScreen();
-			// video.play();
+			video.play();
 		} else {
 			console.log('none worked');
 		}
@@ -59,8 +59,8 @@ function video(video) {
 		console.log('onMinimize');
 		if (!document.msFullscreenElement && !document.webkitCurrentFullScreenElement && !document.mozFullScreenElement) {
 			console.log('minimized');
-			// video.pause();
-			// video.removeAttribute('controls');
+			video.pause();
+			video.removeAttribute('controls');
 			video.addEventListener('click', playVideo);
 		}		
 	}
