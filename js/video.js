@@ -11,11 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function video(video) {
 
-	console.log('new video');
-
 	var me = this;
-
-	console.log(video);
 
 	video.addEventListener("click", playVideo);
 
@@ -29,26 +25,26 @@ function video(video) {
 		if (video.requestFullscreen) {
 			console.log('normal');
 			video.requestFullscreen();
-			video.play();
+			
 		} else if (video.msRequestFullscreen) {
 			console.log('ms');
 			video.setAttribute('controls', 'true');
 			video.msRequestFullscreen();
-			video.play();
+			
 		} else if (video.mozRequestFullScreen) {
 			console.log('moz');
 			video.setAttribute('controls', 'true');
 			video.mozRequestFullScreen();
-			video.play();
+			
 		} else if (video.webkitRequestFullScreen) {
 			console.log('webkit');
 			video.setAttribute('controls', 'true');
 			video.webkitRequestFullScreen();
-			video.play();
+			
 		} else {
 			console.log('none worked');
 		}
-
+		// video.play();
 
 		document.addEventListener("MSFullscreenChange", onMinimize, false);
 		document.addEventListener("webkitfullscreenchange", onMinimize, false);
@@ -59,7 +55,7 @@ function video(video) {
 		console.log('onMinimize');
 		if (!document.msFullscreenElement && !document.webkitCurrentFullScreenElement && !document.mozFullScreenElement) {
 			console.log('minimized');
-			video.pause();
+			// video.pause();
 			video.removeAttribute('controls');
 			video.addEventListener('click', playVideo);
 		}		

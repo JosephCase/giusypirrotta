@@ -13,9 +13,15 @@
 
 			<?php 
 				require_once($root."header.php");
-            ?>	
+            ?>
+            <div class="text">						
+				<h3>Enlighten</h3>
+				<p>
+				    16mm b&amp;w film, loop no sound, 6'45''
+				</p>
+			</div>	
             <div class="videoContent">	            	
-	       `	<video loop poster="image01.jpg">
+	       `	<video loop autoplay poster="image01.jpg">
 					<source src="video.mp4" type="video/mp4">
 					<!-- <source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">-->
@@ -25,10 +31,6 @@
 				<img src="image01.jpg">
             </div>
 			<div class="text">						
-				<h3>Enlighten</h3>
-				<p>
-				    16mm b&amp;w film, loop no sound, 6'45''
-				</p>
 				<p>
 				    The focus of the work is the study of light in and outside the screen, in terms of light shot and emitted between production and postproduction. Light is
 				    shown as an abstracted component in its consistence and ephemerality in the ambiguity between what was shot and what is made with other equipment and in
