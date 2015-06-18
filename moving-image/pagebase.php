@@ -20,16 +20,16 @@
 				    16mm b&amp;w film, loop no sound, 6'45''
 				</p>
 			</div>	
-            <div class="videoContent">	            	
-	       `	<video loop autoplay poster="image01.jpg">
+			<div class="videoContent">	            	
+				<video loop autoplay poster="image01.jpg">
 					<source src="video.mp4" type="video/mp4">
 					<!-- <source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">-->
 				</video>
-				<img src="image01.jpg">
-				<img src="image01.jpg">
-				<img src="image01.jpg">
-            </div>
+				<img src="image02.png">
+				<img src="image02.png">
+				<img src="image02.png">
+			</div>
 			<div class="text">						
 				<p>
 				    The focus of the work is the study of light in and outside the screen, in terms of light shot and emitted between production and postproduction. Light is

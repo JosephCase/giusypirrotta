@@ -28,3 +28,18 @@ h3 {
 	font-size: 19px;
 	margin-bottom: 20px;
 }
+@media (max-width: 800px) {
+	video {
+		float: none;
+		margin-top: 2%;
+		width: 100%;
+	}
+	img {
+		float: none;
+		margin-top: 2%;
+		width: 100%;
+	}
+	img:nth-of-type(2n - 1) {
+		margin-left: 0;
+	}
+}

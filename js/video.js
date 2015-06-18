@@ -13,14 +13,23 @@ function video(video) {
 
 	var me = this;
 
-	video.addEventListener("click", playVideo);
+	video.addEventListener("click", clickHandler);
+
+	function clickHandler() {
+		console.log("clickHandler")
+		if (isFullScreen()) {
+			minimize();
+		} else {
+			playVideo();
+		}
+	}
 
 	function playVideo() {
 
 		console.log('playVideo');
 		console.log(video);
 
-		video.removeEventListener('click', playVideo);
+		// video.removeEventListener('click', playVideo);
 
 		if (video.requestFullscreen) {
 			console.log('normal');
@@ -46,18 +55,48 @@ function video(video) {
 		}
 		// video.play();
 
-		document.addEventListener("MSFullscreenChange", onMinimize, false);
-		document.addEventListener("webkitfullscreenchange", onMinimize, false);
-		document.addEventListener("mozfullscreenchange", onMinimize, false);   
+		document.addEventListener("MSFullscreenChange", fullScreenChangeHandler, false);
+		document.addEventListener("webkitfullscreenchange", fullScreenChangeHandler, false);
+		document.addEventListener("mozfullscreenchange", fullScreenChangeHandler, false);   
 	};
 
-	function onMinimize() {
-		console.log('onMinimize');
-		if (!document.msFullscreenElement && !document.webkitCurrentFullScreenElement && !document.mozFullScreenElement) {
+	function minimize() {
+		console.log('MINIZE');
+
+		if (document.exitFullscreen) {
+			console.log('normal');
+			document.exitFullscreen();
+			
+		} else if (document.msExitFullscreen) {
+			console.log('ms');
+			document.msExitFullscreen();
+			
+		} else if (document.mozCancelFullScreen) {
+			console.log('moz');
+			document.mozCancelFullScreen();
+			
+		} else if (video.webkitExitFullScreen) {
+			console.log('webkit');
+			video.webkitExitFullScreen();			
+		}
+	}
+
+	function fullScreenChangeHandler() {
+		console.log('fullScreenChangeHandler');
+		if (!isFullScreen()) {
 			console.log('minimized');
 			// video.pause();
 			video.removeAttribute('controls');
-			video.addEventListener('click', playVideo);
+			// video.addEventListener('click', playVideo);
 		}		
 	}
+
+	function isFullScreen() {
+		if (document.msFullscreenElement || document.webkitCurrentFullScreenElement || document.mozFullScreenElement) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 };
