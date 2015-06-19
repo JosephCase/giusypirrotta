@@ -13,7 +13,12 @@ function video(video) {
 
 	var me = this;
 
-	video.addEventListener("click", clickHandler);
+	var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+	if (!isAndroid){
+		video.addEventListener("click", clickHandler);
+	} else {
+		video.setAttribute('controls', 'true');
+	}
 
 	function clickHandler() {
 		console.log("clickHandler")
@@ -86,7 +91,10 @@ function video(video) {
 		if (!isFullScreen()) {
 			console.log('minimized');
 			// video.pause();
-			video.removeAttribute('controls');
+			if (!isAndroid){
+				video.removeAttribute('controls');				
+			}
+
 			// video.addEventListener('click', playVideo);
 		}		
 	}
