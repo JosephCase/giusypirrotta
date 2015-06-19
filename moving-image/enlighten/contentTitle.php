@@ -1,5 +1,4 @@
 <div class="title">
-	<h3>Chroma</h3>				
-	<p class="english">5'55'' 2013 16mm on HD, colour, sound <br />music Tasos Stamou http://tasosstamou.wordpress.com/<br />starring Angela Christofilou and Margaux Billard</p>
-	<p class="italian">5'55'' colore, sonoro, 16mm on HD, 2013<br />musica Tasos Stamou http://tasosstamou.wordpress.com/<br />starring Angela Christofilou and Margaux Billard</p>
+	<h3>Enlighten</h3>				
+	<p>16mm b&amp;w film, loop no sound, 6&rsquo;45&rsquo;&rsquo;</p>
 </div>	
