@@ -18,6 +18,10 @@ a {
 	color: #000;
 }
 
+body {
+	background-color: #fff;
+}
+
 .content {
 	/*max-width: 960px;*/
 	width: 100%;	
@@ -42,24 +46,48 @@ h1 {
 }
 
 .navigation a {
-	top: 0;
+	padding: 2px 4px;
 	display: inline-block;
-	position: relative;
 	margin: 0 18px;	
-	transition: top 0.1s;
+	transition: all 0.2s;
+	/*border: 3px solid #fff;*/
+	position: relative;
+	top: 0;
 }
 
+.navigation a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	width: 0;
+	border-bottom: 2px solid #fff;
+	transition: all 0.2s;
+}
 .navigation a:hover {
-	top: -4px;
+	top: -8px;
+	padding-bottom: 8px;
+	margin-bottom: -6px;
+}
+.navigation a:hover span {
+	/*width: 20px;
+	margin-left: -10px;*/
+	width: 80%;
+	left: 10%;
+	border-color: #000;
+}
+
+/*.navigation a:hover {
+	background-color: #111;
+	color: #fff;
 }
 .navigation a.active {
-	padding: 10px;
-	padding-top: 8x;
-	border: 3px solid black;
+	border-color: #000;
 }
 .navigation a.active:hover {
-	top: 0;
-}
+	background-color: initial;
+	color: initial;
+}*/
 
 
 

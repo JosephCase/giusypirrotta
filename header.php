@@ -7,12 +7,12 @@
 
 <p class="navigation">
 <?php 
-	echo "<a ".($pageType == 'homepage' ? 'class=active' : '')." href='{$rootHelper}'>Works</a><span>/</span>";
-	echo "<a href='{$rootHelper}moving-image'>Moving Image</a><span>/</span>";
-	echo "<a href='{$rootHelper}images'>Images</a><span>/</span>";
-	echo "<a href='{$rootHelper}cv.php'>CV</a><span>/</span>";
-	echo "<a href='{$rootHelper}statement.php'>Statement</a><span>/</span>";	
-	echo "<a href='{$rootHelper}bio.php'>Bio</a><span>/</span>";
-	echo "<a href='{$rootHelper}contact.php'>Contact</a>";
+	echo "<a ".($pageType == 'homepage' ? 'class=active' : '')." href='{$rootHelper}'>Works<span class='underline'></span></a><span>/</span>";
+	echo "<a href='{$rootHelper}moving-image'>Moving Image<span class='underline'></span></a><span>/</span>";
+	echo "<a href='{$rootHelper}images'>Images<span class='underline'></span></a><span>/</span>";
+	echo "<a href='{$rootHelper}cv.php'>CV<span class='underline'></span></a><span>/</span>";
+	echo "<a href='{$rootHelper}statement.php'>Statement<span class='underline'></span></a><span>/</span>";	
+	echo "<a href='{$rootHelper}bio.php'>Bio<span class='underline'></span></a><span>/</span>";
+	echo "<a href='{$rootHelper}contact.php'>Contact<span class='underline'></span></a>";
 ?>
 </p>
