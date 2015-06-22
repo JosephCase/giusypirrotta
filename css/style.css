@@ -52,6 +52,14 @@ h1 {
 .navigation a:hover {
 	top: -4px;
 }
+.navigation a.active {
+	padding: 10px;
+	padding-top: 8x;
+	border: 3px solid black;
+}
+.navigation a.active:hover {
+	top: 0;
+}
 
 
 
