@@ -20,7 +20,7 @@
             ?>
 
 			<div class="videoContent">	            	
-				<video loop autoplay poster="image01.jpg">
+				<video loop controls poster="image01.jpg">
 					<source src="video.mp4" type="video/mp4">
 					<!-- <source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">-->

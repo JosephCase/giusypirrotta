@@ -30,7 +30,7 @@
                         <p>RGB</p>
                     </div>
                 </a>   
-                <a>
+                <a href="vanishing-point">
                     <img src="vanishing-point/mainImage.jpg" />
                     <div class="overlay">
                         <p>Vanishing Point</p>
@@ -48,7 +48,7 @@
                         <p>Enlighten</p>
                     </div>
                 </a>   
-                <a>
+                <a href="secret">
                     <img src="secret/mainImage.jpg" />
                     <div class="overlay">
                         <p>Secret</p>

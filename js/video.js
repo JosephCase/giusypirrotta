@@ -13,12 +13,13 @@ function video(video) {
 
 	var me = this;
 
-	var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
-	if (!isAndroid){
-		video.addEventListener("click", clickHandler);
-	} else {
-		video.setAttribute('controls', 'true');
-	}
+	// video.play();
+
+	video.addEventListener("click", function() {
+		this.play();
+	});
+
+	// video.addEventListener("click", clickHandler);
 
 	function clickHandler() {
 		console.log("clickHandler")
