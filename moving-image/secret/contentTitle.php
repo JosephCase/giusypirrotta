@@ -1,4 +1,4 @@
 <div class="title">
-	<h3>Enlighten</h3>				
-	<p>16mm b&amp;w film, loop no sound, 6&rsquo;45&rsquo;&rsquo;</p>
+	<h3>Secret</h3>				
+	<p>Video, 13&rsquo;40&rsquo;&rsquo;, color, no sound, 2010</p>
 </div>	

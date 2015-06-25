@@ -8,7 +8,7 @@
         require_once $root.'head.php';
     ?>    
     <body class="english">
-        <div class="content"> 
+        <div class="content contact"> 
             <?php 
                 require_once $root.'header.php';
             ?>
