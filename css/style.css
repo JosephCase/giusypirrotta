@@ -63,18 +63,32 @@ h1 {
 	width: 0;
 	border-bottom: 2px solid #fff;
 	transition: all 0.2s;
+	box-sizing: border-box;
 }
-.navigation a:hover, .navigation a.active {
+.navigation a:hover {
 	top: -8px;
 	padding-bottom: 8px;
 	margin-bottom: -6px;
 }
-.navigation a:hover span, .navigation a.active span {
+.navigation a:hover span {
 	/*width: 20px;
 	margin-left: -10px;*/
 	width: 80%;
 	left: 10%;
 	border-color: #000;
+}
+
+.navigation a.active {
+	top: 0;
+	padding: 12px;
+	margin: 0 10px;
+	margin-bottom: -24px;
+}
+
+.navigation a.active span {
+	width: 100%;
+	left: 0;
+	border: 2px solid #000;
 }
 
 /*.navigation a:hover {
