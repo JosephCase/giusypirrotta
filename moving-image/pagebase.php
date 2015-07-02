@@ -1,7 +1,8 @@
 <!--Helpers-->
 <?php 
     require_once '../../helpers/rootResolver.php';
-    $pageType = 'videoPage';
+    $style = 'videoPage';
+    $section = 'moving-image';
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">

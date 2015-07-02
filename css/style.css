@@ -64,12 +64,12 @@ h1 {
 	border-bottom: 2px solid #fff;
 	transition: all 0.2s;
 }
-.navigation a:hover {
+.navigation a:hover, .navigation a.active {
 	top: -8px;
 	padding-bottom: 8px;
 	margin-bottom: -6px;
 }
-.navigation a:hover span {
+.navigation a:hover span, .navigation a.active span {
 	/*width: 20px;
 	margin-left: -10px;*/
 	width: 80%;

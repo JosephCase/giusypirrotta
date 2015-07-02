@@ -1,7 +1,8 @@
 <!--Helpers-->
 <?php 
     require_once '../../helpers/rootResolver.php';
-    $pageType = 'workPage';
+    $style = 'workPage';
+    $section = 'works';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
