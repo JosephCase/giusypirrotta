@@ -48,7 +48,7 @@ h1 {
 .navigation a {
 	padding: 2px 4px;
 	display: inline-block;
-	margin: 0 18px;	
+	margin: 0 18px 20px;	
 	transition: all 0.2s;
 	/*border: 3px solid #fff;*/
 	position: relative;
@@ -67,12 +67,9 @@ h1 {
 }
 .navigation a:hover {
 	top: -8px;
-	padding-bottom: 8px;
-	margin-bottom: -6px;
 }
 .navigation a:hover span {
-	/*width: 20px;
-	margin-left: -10px;*/
+	bottom: -6px;
 	width: 80%;
 	left: 10%;
 	border-color: #000;
@@ -81,14 +78,14 @@ h1 {
 .navigation a.active {
 	top: 0;
 	padding: 12px;
-	margin: 0 10px;
-	margin-bottom: -24px;
+	margin: 0 10px -4px;
 }
 
 .navigation a.active span {
 	width: 100%;
 	left: 0;
 	border: 2px solid #000;
+	bottom: 0;
 }
 
 /*.navigation a:hover {

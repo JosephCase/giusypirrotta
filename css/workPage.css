@@ -36,10 +36,18 @@ div.content {
 	padding: 0 10px;
 }
 
+.images img {
+	opacity: 0;
+	transition: opacity 1s;
+}
+.images img.loaded {
+	opacity: 1;
+}
 .images img, .images video {
 	margin: 60px auto 0 auto;
 	display: block;
 	width: 100%;
+
 }
 
 .images img:first-of-type {
