@@ -56,16 +56,17 @@ h1 {
 }
 
 .navigation a span {
-	position: absolute;
+	display: none;
+	/*position: absolute;
 	top: 0;
 	left: 50%;
 	bottom: 0;
 	width: 0;
 	border-bottom: 2px solid #fff;
 	transition: all 0.2s;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 }
-.navigation a:hover {
+/*.navigation a:hover {
 	top: -8px;
 }
 .navigation a:hover span {
@@ -73,20 +74,20 @@ h1 {
 	width: 80%;
 	left: 10%;
 	border-color: #000;
-}
-
+}*/
 .navigation a.active {
-	top: 0;
-	padding: 12px;
-	margin: 0 10px -4px;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	font-weight: bold;
 }
 
-.navigation a.active span {
+/*.navigation a.active span {
 	width: 100%;
 	left: 0;
 	border: 2px solid #000;
 	bottom: 0;
-}
+}*/
 
 /*.navigation a:hover {
 	background-color: #111;
@@ -134,6 +135,14 @@ body.italian .english {
 
 body.english .italian {
 		display: none;
+}
+
+img {
+	opacity: 0;
+	transition: opacity 1s;
+}
+img.loaded {
+	opacity: 1;
 }
 
 @media (max-width: 620px) {
