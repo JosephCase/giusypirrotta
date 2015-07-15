@@ -57,14 +57,6 @@ h1 {
 
 .navigation a span {
 	display: none;
-	/*position: absolute;
-	top: 0;
-	left: 50%;
-	bottom: 0;
-	width: 0;
-	border-bottom: 2px solid #fff;
-	transition: all 0.2s;
-	box-sizing: border-box;*/
 }
 /*.navigation a:hover {
 	top: -8px;
@@ -76,18 +68,26 @@ h1 {
 	border-color: #000;
 }*/
 .navigation a.active {
-	-moz-transform: scale(1.1);
+	/*-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+	transform: scale(1.1);*/
 	font-weight: bold;
 }
 
-/*.navigation a.active span {
-	width: 100%;
-	left: 0;
-	border: 2px solid #000;
-	bottom: 0;
-}*/
+.navigation a.active span {
+	position: absolute;
+	display: block;
+	/*border-radius: 50%;*/
+	height: 6px;
+	width: 6px;
+	left: 50%;
+	/*border: 2px solid #000;*/
+	background-color: #000;
+	top: -10px;
+	box-sizing: border-box;
+	margin-left: -3px;
+    transform: rotate(225deg);
+}
 
 /*.navigation a:hover {
 	background-color: #111;
