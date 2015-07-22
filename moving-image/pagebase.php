@@ -26,12 +26,6 @@
 					<!-- <source src="video.ogg" type="video/ogg">
 					<source src="video.webm" type="video/webm">-->
 				</video>
-				<?php							
-					$images = glob('image*.jpg');
-					foreach($images as $image) {
-						echo "<img src='".$image."' />";
-					}
-				?>
 			</div>
 			<?php
 				require_once("contentText.php");
