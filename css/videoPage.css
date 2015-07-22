@@ -16,7 +16,8 @@ p {
 }
 video {
 	display: block;
-	width: 90%;
+	/*width: 90%;*/
+	height: 100vh;
 	margin: auto;
 }
 video:hover {
