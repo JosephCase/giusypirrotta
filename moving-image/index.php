@@ -25,7 +25,7 @@
                         <p>The Quality of "Scale"</p>
                     </div>
                 </a> 
-                <a>
+                <a href="rgb">
                     <img src="rgb/mainImage.jpg" />
                     <div class="overlay">
                         <p>RGB</p>
