@@ -23,6 +23,17 @@ video {
 video:hover {
 	cursor: pointer;
 }
+
+div.frames {
+	margin: 20px 0;
+}
+div.frames img{
+	width: 32%;
+	margin: 1% 0;
+}
+div.frames img:nth-of-type(3n - 1){
+	margin: 1% 2%;
+}
 /*img {
 	float: left;
 	margin-top: 2%;

@@ -28,6 +28,19 @@
 				</video>
 			</div>
 			<?php
+				$files = glob('images/*.jpg');
+				if (count($files) > 0) {
+
+					echo "<div class='frames'>";												
+					foreach($files as $file) {
+						echo "<img src='".$file."' />";
+					}
+					echo "</div>";
+
+				}
+			?>
+
+			<?php
 				require_once("contentText.php");
             ?>
 			
