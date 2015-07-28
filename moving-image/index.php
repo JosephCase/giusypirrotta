@@ -19,7 +19,7 @@
             ?>
 
             <div class="portfolio_links">
-                <a>
+                <a href="the-quality-of-scale">
                     <img src="the-quality-of-scale/mainImage.jpg" />
                     <div class="overlay">
                         <p>The Quality of "Scale"</p>
