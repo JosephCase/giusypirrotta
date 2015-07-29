@@ -4,22 +4,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var videoObjects = []
 	console.log(videoElements.length);
 	for (i = 0; i < videoElements.length; i++) {
-		videoObjects[i] = new video(videoElements[i]);
+		videoObjects[i] = new Video(videoElements[i]);
 	}
 
 });
 
-function video(video) {
+function Video(video) {
 
 	var me = this;
-
-	// video.play();
+	if (isPortrait()) {
+		video.className = video.className += 'portrait';
+	}
 
 	video.addEventListener("click", function() {
 		this.play();
 	});
 
 	// video.addEventListener("click", clickHandler);
+
+	function isPortrait() {
+		return (window.innerWidth / window.innerHeight < 4/3 ? true : false);
+	}
 
 	function clickHandler() {
 		console.log("clickHandler")

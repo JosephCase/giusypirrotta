@@ -19,6 +19,11 @@ video {
 	/*width: 90%;*/
 	height: 90vh;
 	margin: auto;
+	max-width: 100%;
+}
+video.portrait {
+	height: auto;
+	width: 100%;
 }
 video:hover {
 	cursor: pointer;
