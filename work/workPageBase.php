@@ -25,7 +25,7 @@
 				<?php							
 					$files = glob('images/*.jpg');
 					foreach($files as $file) {
-						echo "<img src='".$file."' />";
+						echo "<img data-img='".$file."' />";
 					}
 				?>      
 			</div>

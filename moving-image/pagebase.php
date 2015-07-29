@@ -33,7 +33,7 @@
 
 					echo "<div class='frames'>";												
 					foreach($files as $file) {
-						echo "<img src='".$file."' />";
+						echo "<img data-img='".$file."' />";
 					}
 					echo "</div>";
 

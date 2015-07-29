@@ -20,37 +20,37 @@
 
             <div class="portfolio_links">
                 <a href="the-quality-of-scale">
-                    <img src="the-quality-of-scale/mainImage.jpg" />
+                    <img data-img="the-quality-of-scale/mainImage.jpg" />
                     <div class="overlay">
                         <p>The Quality of "Scale"</p>
                     </div>
                 </a> 
                 <a href="rgb">
-                    <img src="rgb/mainImage.jpg" />
+                    <img data-img="rgb/mainImage.jpg" />
                     <div class="overlay">
                         <p>RGB</p>
                     </div>
                 </a>   
                 <a href="vanishing-point">
-                    <img src="vanishing-point/mainImage.jpg" />
+                    <img data-img="vanishing-point/mainImage.jpg" />
                     <div class="overlay">
                         <p>Vanishing Point</p>
                     </div>
                 </a>   
                 <a href="chroma">
-                    <img src="chroma/mainImage.jpg" />
+                    <img data-img="chroma/mainImage.jpg" />
                     <div class="overlay">
                         <p>Chroma</p>
                     </div>
                 </a>   
                 <a href="enlighten">
-                    <img src="enlighten/mainImage.jpg" />
+                    <img data-img="enlighten/mainImage.jpg" />
                     <div class="overlay">
                         <p>Enlighten</p>
                     </div>
                 </a>   
                 <a href="secret">
-                    <img src="secret/mainImage.jpg" />
+                    <img data-img="secret/mainImage.jpg" />
                     <div class="overlay">
                         <p>Secret</p>
                     </div>
