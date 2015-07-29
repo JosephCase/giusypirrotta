@@ -4,15 +4,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function workPage() {
 	var aImages = document.getElementsByTagName('img');
-	for (var i = 0; i < aImages.length; i++) {
-		// aImages[i].className = this.className + ' loaded';
-		aImages[i].addEventListener("load", function() {
-			this.className = this.className + ' loaded';
-		}, false);
+	
+	showImage(0);
 
-		aImages[i].src = aImages[i].src;
-	};
-	// $('images img').on('load', function() {
-	// 	this.addClass("loaded");
-	// })
+	//Loop through images in order
+	function showImage(i) {
+		console.log(aImages[i].complete);
+		if (aImages[i].complete == true) {
+			aImages[i].className = aImages[i].className + ' loaded';
+			if (i < aImages.length) {
+				showImage(i+1);
+			}
+		} else {
+			aImages[i].addEventListener("load", function() {
+				this.className = this.className + ' loaded';
+				if (i < aImages.length) {
+					showImage(i+1);
+				}
+			}, false);			
+		}
+	}
 }
