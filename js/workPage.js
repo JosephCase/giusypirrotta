@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function workPage() {
+	document.getElementById("test-box").innerText = window.devicePixelRatio;
 	var aImages = document.getElementsByTagName('img');
 	
 	showImage(0);
