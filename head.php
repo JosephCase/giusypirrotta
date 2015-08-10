@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!--Google Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'> -->
 
     <!--CSS-->
     <?php
