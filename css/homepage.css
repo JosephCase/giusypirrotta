@@ -59,6 +59,7 @@
 @media (max-width: 800px) {
 	.portfolio_links a {	
 		width: 47%;
+		padding-top: 31.33%;
 	}
 	.portfolio_links a:nth-of-type(3n - 2) {	
 		margin-left: 1%	
