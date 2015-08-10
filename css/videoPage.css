@@ -9,6 +9,14 @@ p {
 	margin-top: 0;
 	font-size: 14px;
 }
+.title a{
+	text-decoration: underline;
+	color: rgb(0,0,238);
+	font-weight: bold;
+}
+.title a:visited {
+	color: rgb(85, 26, 139);
+}
 .videoContent {
 	overflow-y: auto;
 	margin-top: 20px;
