@@ -56,6 +56,25 @@
 	transform: translateX(-50%) translateY(-50%);
 }
 
+/*Images page*/
+
+.portfolio_links.images a {	
+	width: 47%;
+	padding-top: 31.33%;
+}
+.portfolio_links.images a:nth-of-type(3n - 2) {	
+	margin-left: 1%	
+}
+.portfolio_links.images a:nth-of-type(3n) {	
+	margin-right: 1%	
+}
+.portfolio_links.images a:nth-of-type(2n - 1) {	
+	margin-left: 2%	
+}
+.portfolio_links.images a:nth-of-type(2n) {	
+	margin-right: 2%	
+}
+
 @media (max-width: 800px) {
 	.portfolio_links a {	
 		width: 47%;

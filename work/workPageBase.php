@@ -15,11 +15,14 @@
 				require_once($root."header.php");
             ?>	
 
-            <div class="workDetail">
-			<?php 
-				include_once("pageHeading.php");
+
+			<?php
+				if(file_exists("pageHeading.php")) {
+					echo "<div class='workDetail'>";
+		            include_once("pageHeading.php");
+		            echo "</div>";				
+				}
             ?>
-            </div>
 
 			<div class="images">
 				<?php							
@@ -30,12 +33,13 @@
 				?>      
 			</div>
 
-
-            <div class="workDescription">
-			<?php 
-				include_once("pagetext.php");
+			<?php
+				if(file_exists("pageHeading.php")) {
+					echo "<div class='workDescription'>";
+		            include_once("pagetext.php");
+		            echo "</div>";				
+				}
             ?>
-            </div>
 			
 			<?php
 				require_once($root."footer.php");
