@@ -1,7 +1,7 @@
 <!--Helpers-->
 <?php 
-	$media_content_dir = substr(getcwd(), strlen($_SERVER['DOCUMENT_ROOT']));
     require_once '../../helpers/rootResolver.php';
+	$media_content_dir = substr(getcwd(), strlen($root));
     $style = 'workPage';
     $section = 'works';
 ?>

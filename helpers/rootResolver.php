@@ -9,5 +9,5 @@
 	
 	//Set root folder of all media content
 	$media_content_root = $rootHelper."/media_content";
-	$absolute_media_content_root = $root.$media_content_root;
+	$absolute_media_content_root = $_SERVER['DOCUMENT_ROOT'].$media_content_root;
 ?>
