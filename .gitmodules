@@ -1,0 +1,3 @@
+[submodule "media_content"]
+	path = media_content
+	url = https://github.com/JosephCase/media_content.git
