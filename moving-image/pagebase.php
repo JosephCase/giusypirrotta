@@ -8,13 +8,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
-		require_once($root."head.php");
+		require_once($root."/head.php");
     ?>
 	<body class="english">
 		<div class="content">
 
 			<?php 
-				require_once($root."header.php");
+				require_once($root."/header.php");
             ?>
 
             <?php
@@ -51,7 +51,7 @@
             ?>
 			
 			<?php
-				require_once($root."footer.php");
+				require_once($root."/footer.php");
             ?>
 
 		</div>

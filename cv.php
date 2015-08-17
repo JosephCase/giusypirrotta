@@ -7,12 +7,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     
     <?php 
-        require_once $root.'head.php';
+        require_once $root.'/head.php';
     ?>  
     <body class="english">
         <div class="content"> 
             <?php 
-                require_once $root.'header.php';
+                require_once $root.'/header.php';
             ?>
 
             <h4>QUALIFICATIONS</h4>
@@ -52,7 +52,7 @@
             <p><b>2012</b> 16 mm film specialist at Central Saint Martin College of Art &amp; Design Film and video department
 
             <?php 
-                require_once $root.'footer.php';
+                require_once $root.'/footer.php';
             ?>
         </div>
     </body>
