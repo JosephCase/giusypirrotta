@@ -1,0 +1,54 @@
+div.content {
+	max-width: 960px;
+}
+
+.workDetail{
+	margin: 0;
+	padding: 0;
+}
+
+
+.text {
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+
+.text h3 {
+	font-size: 19px;
+	margin-bottom: 20px;
+}
+
+.text p {
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+.workDetail p{
+	font-size: 14px;
+	margin-top: 0;
+}
+.workDescription{
+	margin-top: 52px;
+}
+
+.images{
+	padding: 0 10px;
+}
+
+
+.images img, .images video {
+	margin: 60px auto 0 auto;
+	display: block;
+	width: 100%;
+
+}
+
+.images img:first-of-type {
+	margin-top: 40px;
+}
+
+footer {
+	margin-top: 112px;
+}
+
+

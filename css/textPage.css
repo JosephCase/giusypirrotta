@@ -1,0 +1,49 @@
+
+
+div.content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+h2.name {
+	margin-bottom: 10px;
+}
+h3 {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 500;
+}
+h4 {
+	margin: 0;
+	font-size: 75px;
+}
+p {
+	font-size: 17px;
+	font-weight: 500;
+}
+p.text {
+	margin-top: 26px;
+	text-indent: 40px;	
+}
+footer {
+	margin-top: 100px;
+}
+
+.contact h2 {
+	margin: 200px 0;
+}
+
+@media (max-width: 826px) {
+	h4 {
+		font-size: 50px;
+	}
+}
+@media (max-width: 620px) {
+	h4 {
+		font-size: 32px;
+	}
+}
