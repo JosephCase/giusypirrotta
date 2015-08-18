@@ -21,12 +21,33 @@ h4 {
 	margin: 0;
 	font-size: 75px;
 }
+div.text-circle {
+	height: 80vh;
+	width: 80vh;
+	padding: 15vh;
+	border-radius: 50%;
+	color: white;
+	background-color: pink;
+	margin: 100px auto;
+	box-sizing: border-box;
+}
+
+div.text-circle p {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 p {
 	font-size: 17px;
 	font-weight: 500;
 }
 p.text {
-	margin-top: 26px;
 	text-indent: 40px;	
 }
 footer {
