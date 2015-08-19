@@ -3,7 +3,9 @@
     require_once '../../helpers/rootResolver.php';
 	$media_content_dir = substr(getcwd(), strlen($root));
     $style = 'workPage';
-    $section = 'works';
+    if (!isset($section)) {
+    	$section = 'works';
+    }
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 

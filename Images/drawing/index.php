@@ -1,3 +1,3 @@
 <?php 
-    include_once("../../work/workPageBase.php");
+    include_once("../pageBase.php");
 ?>
