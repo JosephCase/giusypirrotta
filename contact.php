@@ -14,8 +14,9 @@
                 require_once $root.'/header.php';
             ?>
             
-            <!--Italian-->
-            <h2>pirrotta.giusy@gmail.com</h2>
+            <div class="text-circle">
+                <h2>pirrotta.giusy@gmail.com</h2>                
+            </div>
         
             <?php 
                 require_once $root.'/footer.php';
