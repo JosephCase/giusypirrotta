@@ -22,7 +22,7 @@
             ?>
 
 			<div class="videoContent">	            	
-				<video controls poster="<?=$media_content_root.$media_content_dir?>/mainImage.jpg">
+				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_01.jpg">
 					<source src="<?=$media_content_root.$media_content_dir?>/video.webm" type="video/webm">
 					<source src="<?=$media_content_root.$media_content_dir?>/video.ogg" type="video/ogg">
 					<source src="<?=$media_content_root.$media_content_dir?>/video.mp4" type="video/mp4">

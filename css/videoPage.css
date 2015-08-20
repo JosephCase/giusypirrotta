@@ -26,9 +26,9 @@ p {
 video {
 	display: block;
 	/*width: 90%;*/
-	height: 95vh;
+	max-height: 95vh;*/
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
 }
 video.portrait {
 	height: auto;
