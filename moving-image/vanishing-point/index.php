@@ -19,7 +19,7 @@
 
             <div class="title">
 				<h3>Vanishing Point</h3>				
-				<p>Video part of the installation <a href="/work/vanishing_point">Vanishing Point</a>, central projection of the 3 channels video projection, 4&rsquo;45&rsquo;&rsquo;, loop, no sound, 2012</p>
+				<p>Video part of the installation <a href="<?=$rootHelper?>/work/vanishing_point">Vanishing Point</a>, central projection of the 3 channels video projection, 4&rsquo;45&rsquo;&rsquo;, loop, no sound, 2012</p>
 			</div>	
 
 			<div class="videoContent">	            	
@@ -38,7 +38,7 @@
 			</div>
 
 			<div class="title">
-				<p>B&amp;W Film, no sound, 10&rsquo; 39&rsquo;&rsquo; 2012,<br />Film extract, Film part of the Installation <a href="/work/vanishing_point">Vanishing Point</a></p>
+				<p>B&amp;W Film, no sound, 10&rsquo; 39&rsquo;&rsquo; 2012,<br />Film extract, Film part of the Installation <a href="<?=$rootHelper?>/work/vanishing_point">Vanishing Point</a></p>
 			</div>	
 
 			<?php							
