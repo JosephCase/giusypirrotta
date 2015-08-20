@@ -45,9 +45,10 @@
 
 			 
 
-
 			<?php
-				require_once("contentText.php");
+				if(file_exists("contentText.php")) {
+					include_once("contentText.php");				
+				}
             ?>
 			
 			<?php
