@@ -23,14 +23,14 @@
 			</div>	
 
 			<div class="videoContent">	            	
-				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_01.jpg">
+				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_01_o.jpg">
 					<source src="<?=$media_content_root.$media_content_dir?>/video_01.webm" type="video/webm">
 					<source src="<?=$media_content_root.$media_content_dir?>/video_01.ogg" type="video/ogg">
 					<source src="<?=$media_content_root.$media_content_dir?>/video_01.mp4" type="video/mp4">
 				</video>
 			</div>
 			<div class="videoContent">				
-				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_02.jpg">
+				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_02_o.jpg">
 					<source src="<?=$media_content_root.$media_content_dir?>/video_02.webm" type="video/webm">
 					<source src="<?=$media_content_root.$media_content_dir?>/video_02.ogg" type="video/ogg">
 					<source src="<?=$media_content_root.$media_content_dir?>/video_02.mp4" type="video/mp4">
@@ -42,7 +42,7 @@
 			</div>	
 
 			<?php							
-				$files = glob($absolute_media_content_root.$media_content_dir.'/images/*.jpg');
+				$files = glob($absolute_media_content_root.$media_content_dir.'/images/*_o.jpg');
 				if (count($files) > 0) {
 
 					echo "<div class='frames'>";

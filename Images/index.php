@@ -20,13 +20,13 @@
 
             <div class="portfolio_links images">
                 <a href="analogue_print">
-                    <img data-img="<?=$media_content_root?>/images/analogue_print/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/images/analogue_print/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>Analogue Print</p>
                     </div>
                 </a> 
                 <a href="drawing">
-                    <img src="drawing/mainImage.jpg" data-img="<?=$media_content_root?>/images/drawing/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/images/drawing/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>Drawing</p>
                     </div>

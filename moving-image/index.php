@@ -20,37 +20,37 @@
 
             <div class="portfolio_links">
                 <a href="the-quality-of-scale">
-                    <img data-img="<?=$media_content_root?>/moving-image/the-quality-of-scale/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/moving-image/the-quality-of-scale/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>The Quality of "Scale"</p>
                     </div>
                 </a> 
                 <a href="rgb">
-                    <img data-img="<?=$media_content_root?>/moving-image/rgb/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/moving-image/rgb/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>RGB</p>
                     </div>
                 </a>   
                 <a href="vanishing-point">
-                    <img data-img="<?=$media_content_root?>/moving-image/vanishing-point/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/moving-image/vanishing-point/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>Vanishing Point</p>
                     </div>
                 </a>   
                 <a href="chroma">
-                    <img data-img="<?=$media_content_root?>/moving-image/chroma/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/moving-image/chroma/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>Chroma</p>
                     </div>
                 </a>   
                 <a href="enlighten">
-                    <img data-img="<?=$media_content_root?>/moving-image/enlighten/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/moving-image/enlighten/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>Enlighten</p>
                     </div>
                 </a>   
                 <a href="secret">
-                    <img data-img="<?=$media_content_root?>/moving-image/secret/mainImage.jpg" />
+                    <img data-img="<?=$media_content_root?>/moving-image/secret/mainImage_o.jpg" />
                     <div class="overlay">
                         <p>Secret</p>
                     </div>

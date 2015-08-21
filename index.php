@@ -18,67 +18,67 @@
 
         <div class="portfolio_links">
             <a href="work/lightsign_rainbow">
-                <img data-img="<?=$media_content_root?>/work/lightsign_rainbow/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/lightsign_rainbow/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Lightsign_Rainbow</p>
                 </div>
             </a>
             <a href="work/the_quality_of_scale">
-                <img data-img="<?=$media_content_root?>/work/the_quality_of_scale/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/the_quality_of_scale/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>The Quality of "Scale"</p>
                 </div>
             </a>
             <a href="work/rgb">
-                <img data-img="<?=$media_content_root?>/work/rgb/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/rgb/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>RGB</p>
                 </div>
             </a>
             <a href="work/vanishing_point">
-                <img data-img="<?=$media_content_root?>/work/vanishing_point/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/vanishing_point/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Vanishing Point</p>
                 </div>
             </a>
             <a href="work/a_distribution_in_linear_thinking">
-                <img data-img="<?=$media_content_root?>/work/a_distribution_in_linear_thinking/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/a_distribution_in_linear_thinking/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>A disruption in linear thinking</p>
                 </div>
             </a>
             <a href="work/enlighten">
-                <img data-img="<?=$media_content_root?>/work/Enlighten/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/Enlighten/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Enlighten</p>
                 </div>
             </a>
               <a href="work/reversed_light">
-                <img data-img="<?=$media_content_root?>/work/reversed_light/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/reversed_light/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Reversed Light</p>
                 </div>
             </a>
             <a href="work/hawaii">
-                <img data-img="<?=$media_content_root?>/work/hawaii/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/hawaii/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Hawaii</p>
                 </div>
             </a>
             <a href="work/untitled_48">
-                <img data-img="<?=$media_content_root?>/work/untitled_48/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/untitled_48/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Untitled_48</p>
                 </div>
             </a>  
             <a href="work/crystal_ship">
-                <img data-img="<?=$media_content_root?>/work/crystal_ship/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/crystal_ship/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Crystal Ship</p>
                 </div>
             </a>
             <a href="work/the_drama_of_a_single_day">
-                <img data-img="<?=$media_content_root?>/work/the_drama_of_a_single_day/mainImage.jpg" />
+                <img data-img="<?=$media_content_root?>/work/the_drama_of_a_single_day/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>The Drama of a Single day</p>
                 </div>

@@ -25,15 +25,32 @@ function workPage() {
 
 	function chooseSize(src, width) {
 
-		if (width > 800) {
+		var new_src;
+
+		if (width > 800) {								//original
 			return src;
-		} else if (width > 500) {
-			return src.replace("_o.jpg", "_l.jpg");
-		} else if (width > 300) {
-			return src.replace("_o.jpg", "_m.jpg");
-		} else {
-			return src.replace("_o.jpg", "_s.jpg");
+		} else if (width > 500) {						//large
+			new_src = src.replace("_o.jpg", "_l.jpg");
+			return imageExists(new_src) ? new_src : src;
+		} else if (width > 300) {						//medium
+			new_src = src.replace("_o.jpg", "_m.jpg");
+			return imageExists(new_src) ? new_src : src;
+		} else {										//small
+			new_src = src.replace("_o.jpg", "_s.jpg");
+			return imageExists(new_src) ? new_src : src;
 		}
+
+	}
+
+	function imageExists(image_url){
+
+	    var http = new XMLHttpRequest();
+
+	    http.open('HEAD', image_url, false);
+	    http.send();
+
+	    console.log(http.status != 404);
+	    return http.status != 404;
 
 	}
 }
