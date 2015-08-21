@@ -14,13 +14,26 @@ function workPage() {
 
 	//Loop through images in order
 	function showImage(i) {
-		console.log(aImages[i].getAttribute('data-img'));
-		aImages[i].src = aImages[i].getAttribute('data-img');
+		aImages[i].src = chooseSize(aImages[i].getAttribute('data-img'), aImages[i].clientWidth);
 		aImages[i].addEventListener("load", function() {
 			this.className = this.className + ' loaded';
 			if (i < aImages.length - 1) {
 				showImage(i+1);
 			}
 		}, false);		
+	}
+
+	function chooseSize(src, width) {
+
+		if (width > 800) {
+			return src;
+		} else if (width > 500) {
+			return src.replace("_o.jpg", "_l.jpg");
+		} else if (width > 300) {
+			return src.replace("_o.jpg", "_m.jpg");
+		} else {
+			return src.replace("_o.jpg", "_s.jpg");
+		}
+
 	}
 }

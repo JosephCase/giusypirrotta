@@ -29,7 +29,7 @@
 
 			<div class="images">
 				<?php							
-					$files = glob($absolute_media_content_root.$media_content_dir.'/images/*.jpg');
+					$files = glob($absolute_media_content_root.$media_content_dir.'/images/*_o.jpg');
 					foreach($files as $abs_file) {
 						$file = basename($abs_file);
 						echo "<img data-img='".$media_content_root.$media_content_dir."/images/".$file."' />";
