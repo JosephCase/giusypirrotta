@@ -22,30 +22,33 @@ h4 {
 	font-size: 75px;
 }
 div.text-circle {
-	height: 110vh;
-	width: 110vh;
-	max-height: 90vw;
-	max-width: 90vw;
-	padding: 15vh;
-	border-radius: 50%;
-	/*color: white;*/
-	background-color: white;
-	/*background-color: #FF8DA1;*/
-	border: 10px solid #FF8DA1;
-	margin: 160px auto;
-	box-sizing: border-box;
+	height: 1050px;
+    width: 1050px;
+    padding: 15vh;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px double #FF8DA1;
+    margin: 120px 0;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    margin-left: -525px;
 }
 
 div.text-circle * {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	font-size: 1.8vh;
+	   text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    /* font-size: 1.8vh; */
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 30px;
 }
 
 div.text-circle h2 {
@@ -68,5 +71,8 @@ footer {
 @media (max-width: 620px) {
 	h4 {
 		font-size: 32px;
+	}
+	div.text-circle {
+		height: 1500px;
 	}
 }
