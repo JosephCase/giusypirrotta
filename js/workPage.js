@@ -25,21 +25,44 @@ function workPage() {
 
 	function chooseSize(src, width) {
 
+		var aSizes = getSizes(src);
+		var physicalWidth = calculatePhysicalWidth(width);
+
 		var new_src;
 
-		if (width > 800) {								//original
+		if (physicalWidth > aSizes[0]) {								//original
 			return src;
-		} else if (width > 500) {						//large
+		} else if (physicalWidth > aSizes[1]) {						//large
 			new_src = src.replace("_o.jpg", "_l.jpg");
-			return imageExists(new_src) ? new_src : src;
-		} else if (width > 300) {						//medium
+		} else if (physicalWidth > aSizes[2]) {						//medium
 			new_src = src.replace("_o.jpg", "_m.jpg");
-			return imageExists(new_src) ? new_src : src;
 		} else {										//small
 			new_src = src.replace("_o.jpg", "_s.jpg");
-			return imageExists(new_src) ? new_src : src;
 		}
+		
+		return imageExists(new_src) ? new_src : src;
 
+	}
+
+	function getSizes(src) {
+		var aSizes = [];
+		// if (src.indexOf("thumb") > -1) {
+			aSizes[0] = 600;
+			aSizes[1] = 500;
+			aSizes[2] = 350;
+		// } else {
+		// 	aSizes[0] = 1200;
+		// 	aSizes[1] = 1000;
+		// 	aSizes[2] = 700;
+		// }
+		console.log("aSizes: " + aSizes);
+		return aSizes;
+	}
+
+	function calculatePhysicalWidth (width) {
+		var multiplier = (window.devicePixelRatio >= 2) ? 2 : 1;
+		console.log("multiplier: " + multiplier);
+		return width * multiplier;
 	}
 
 	function imageExists(image_url){
