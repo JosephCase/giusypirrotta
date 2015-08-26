@@ -36,19 +36,23 @@ div.content {
 }
 
 
-.images img, .images video {
-	margin: 60px auto 0 auto;
+.images img {
+	margin: 150px auto;
 	display: block;
 	width: 100%;
-
 }
 
-.images img:first-of-type {
-	margin-top: 40px;
+.images img:first-of-type, .images img:last-of-type {
+	margin: 60px auto;
 }
 
 footer {
 	margin-top: 112px;
 }
 
+@media (max-width: 800px) {
+	.images img, .images video {
+		margin: 60px auto;
+	}
+}
 

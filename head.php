@@ -16,9 +16,12 @@
         echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}/CSS/style.css?version=1.2'>";
         echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}/CSS/{$style}.css?version=1.1'>";
 
+        if ($style == "workPage") {
+            echo "<script src='{$rootHelper}/js/workPage.js'></script>";
+        }       
+        echo "<script src='{$rootHelper}/js/images.js'></script>"; 
         echo "<script src='{$rootHelper}/js/language.js'></script>";
-        echo "<script src='{$rootHelper}/js/video.js'></script>";        
-        echo "<script src='{$rootHelper}/js/workPage.js'></script>";
+        echo "<script src='{$rootHelper}/js/video.js'></script>"; 
     ?>
 
 

@@ -42,6 +42,10 @@
 	height: 100%;
 	background-color: rgba(0,0,0,0);
 	color: rgba(300,300,300,0);
+	-webkit-transition: background-color 0.5s, color 0.5s;
+	-moz-transition: background-color 0.5s, color 0.5s;
+	-o-transition: background-color 0.5s, color 0.5s;
+	-ms-transition: background-color 0.5s, color 0.5s;
 	transition: background-color 0.5s, color 0.5s;
 }
 .portfolio_links a:hover .overlay {	
@@ -52,8 +56,12 @@
 .portfolio_links a .overlay p {
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 	text-align: center;
 }
 
@@ -64,6 +72,9 @@
 	padding-top: 47%;
 	border-radius: 50%;
 	z-index: 1; /* hack: allows border radius to be applied before image load*/;
+}
+.portfolio_links.images a img{	
+	border-radius: 50%; /*safari fix */
 }
 
 .portfolio_links.images a:nth-of-type(3n - 2) {	
