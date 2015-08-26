@@ -20,25 +20,35 @@
 
             function resizeImages ($dir) {
                 $files = glob($dir.'/*_o.jpg');                
-                $dirs = glob($dir."/*", GLOB_ONLYDIR);
+                // $dirs = glob($dir."/*", GLOB_ONLYDIR);
                 if (count($files) > 0) {
                     foreach($files as $file) {
-                        list_name($file);
-                        resizeImage($file, 600, "_l");
-                        resizeImage($file, 500, "_m");
-                        resizeImage($file, 350, "_s");
+                        if (strpos($file, 'frame') == true) {
+                            list_name($file);
+                        } else {
+                            echo 'false'
+                        }
+                        // if ($filename == "mainImage_o") {
+                            list_name($filename);
+                        // }
                     }
                 } 
-                if (count($dirs) > 0) {
-                    // echo count($dirs) . " - ";
-                    foreach($dirs as $sub_dir) {
-                        // echo $sub_dir . "</br>";
-                        resizeImages($sub_dir);
-                    }
-                }            
+                // if (count($dirs) > 0) {
+                //     // echo count($dirs) . " - ";
+                //     foreach($dirs as $sub_dir) {
+                //         // echo $sub_dir . "</br>";
+                //         resizeImages($sub_dir);
+                //     }
+                // }            
             }
             function resizeImage($file, $newWidth, $extension) {
                 $image = @imagecreatefromjpeg($file);
+                $new_file = str_replace("_o.jpg", $extension.".jpg", $file);
+
+                if(file_exists($new_file)) {
+                    unlink($new_file);     //remove old version of file
+                }
+                
                 if (imagesx($image) > $newWidth) {
 
                     // Get new dimensions
@@ -47,15 +57,13 @@
 
                     //Resize image
                     $resizedImage = imagecreatetruecolor($newWidth, $newHeight);
-                    // imagesetinterpolation($resizedImage, IMG_SINC);
-                    imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $newWidth, $newHeight, imagesx($image), imagesy($image));
 
+                    imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $newWidth, $newHeight, imagesx($image), imagesy($image));
 
                     //Sharpen Image
                     $resizedImage = sharpen($resizedImage);
 
                     //Save image
-                    $new_file = str_replace("_o.jpg", $extension.".jpg", $file);
                     if (imagetypes() & IMG_JPG) {
                         imagejpeg($resizedImage, $new_file, 100);
                         imagedestroy($image);
