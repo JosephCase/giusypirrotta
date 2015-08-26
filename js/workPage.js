@@ -10,7 +10,7 @@ function workPage() {
 	
 	document.getElementById("test-box").innerText = aImages[0].clientWidth + " x " +  window.devicePixelRatio + " = "  + aImages[0].clientWidth * window.devicePixelRatio;
 
-	showImage(0);
+	showImage(0); // show the first image
 
 	//Loop through images in order
 	function showImage(i) {
@@ -30,26 +30,28 @@ function workPage() {
 
 		var new_src;
 
-		if (physicalWidth > aSizes[0]) {								//original
-			return src;
-		} else if (physicalWidth > aSizes[1]) {						//large
-			new_src = src.replace("_o.jpg", "_l.jpg");
-		} else if (physicalWidth > aSizes[2]) {						//medium
+		// if (physicalWidth > aSizes[0]) {								//original
+		// 	return src;
+		// } else 
+
+		if (physicalWidth <= aSizes[2]) {						//large
+			new_src = src.replace("_o.jpg", "_s.jpg");
+		} else if (physicalWidth <= aSizes[1]) {						//medium
 			new_src = src.replace("_o.jpg", "_m.jpg");
 		} else {										//small
-			new_src = src.replace("_o.jpg", "_s.jpg");
+			new_src = src.replace("_o.jpg", "_l.jpg");
 		}
 		
-		return imageExists(new_src) ? new_src : src;
+		return new_src;
 
 	}
 
 	function getSizes(src) {
 		var aSizes = [];
 		// if (src.indexOf("thumb") > -1) {
-			aSizes[0] = 600;
-			aSizes[1] = 500;
-			aSizes[2] = 350;
+			aSizes[0] = 1400;
+			aSizes[1] = 900;
+			aSizes[2] = 600;
 		// } else {
 		// 	aSizes[0] = 1200;
 		// 	aSizes[1] = 1000;

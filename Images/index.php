@@ -22,13 +22,13 @@
                 <a href="analogue_print">
                     <img data-img="<?=$media_content_root?>/images/analogue_print/mainImage_o.jpg" />
                     <div class="overlay">
-                        <p>Analogue Print</p>
+                        <p>Analogue Prints</p>
                     </div>
                 </a> 
                 <a href="drawing">
                     <img data-img="<?=$media_content_root?>/images/drawing/mainImage_o.jpg" />
                     <div class="overlay">
-                        <p>Drawing</p>
+                        <p>Drawings</p>
                     </div>
                 </a>       
             </div>
