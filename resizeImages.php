@@ -17,14 +17,13 @@
         <h1>Image Resizer</h1>
         <?php 
 
-
             function resizeImages ($dir) {
                 $files = glob($dir.'/*_o.jpg');                
                 $dirs = glob($dir."/*", GLOB_ONLYDIR);
                 if (count($files) > 0) {
                     foreach($files as $file) {
-                        resizeImage($file, 1400, "_l");
-                        resizeImage($file, 900, "_m");
+                        // resizeImage($file, 1400, "_l");
+                        // resizeImage($file, 900, "_m");
                         resizeImage($file, 600, "_s");
                     }
                 } 
@@ -37,12 +36,17 @@
                 }            
             }
             function resizeImage($file, $newWidth, $extension) {
+
+                set_time_limit(20);
+
+                list_name($file);
+
                 $image = @imagecreatefromjpeg($file);
                 $new_file = str_replace("_o.jpg", $extension.".jpg", $file);
 
-                if(file_exists($new_file)) {
-                    unlink($new_file);     //remove old version of file
-                }
+                // if(file_exists($new_file)) {
+                //     unlink($new_file);     //remove old version of file
+                // }
                 
                 if (imagesx($image) < $newWidth) { //if the image is smaller than it needs to be, do not scale up
                     $newWidth = imagesx($image);
@@ -57,19 +61,19 @@
 
                 imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $newWidth, $newHeight, imagesx($image), imagesy($image));
 
-                //Sharpen Image
+                // Sharpen Image
                 if ($extension == "_s") {
                     $resizedImage = sharpen($resizedImage);
                 }
 
-                //Save image
+                // //Save image
                 if (imagetypes() & IMG_JPG) {
-                    imagejpeg($resizedImage, $new_file, 95);
+                    imagejpeg($resizedImage, $new_file, 90);
                     imagedestroy($image);
                     imagedestroy($resizedImage);
                 }
 
-                    // return "<img src='".$new_file."' />";                
+                               
             }
 
             function sharpen($image) {
@@ -110,7 +114,7 @@
                 echo "<p>".$file."</p>";
             }
 
-            resizeImages("media_content");
+            resizeImages("media_content/moving-image");
         ?>
     </body>
 </html>

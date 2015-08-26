@@ -64,7 +64,7 @@ footer {
 		font-size: 50px;
 	}
 }
-@media (max-width: 620px) {
+@media (max-width: 760px) {
 	h4 {
 		font-size: 32px;
 	}
@@ -81,6 +81,10 @@ footer {
 		margin: 0;
 	}
 	div.text-circle * {
+		-moz-transform: none;
+		-ms-transform: none;
+		-webkit-transform: none;
+		-o-transform: none;
 		transform: none;
 		padding: 0;
 		position: static;
