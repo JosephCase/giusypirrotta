@@ -9,5 +9,6 @@ function WorkPage() {
 		contentDiv.style.maxWidth = 1.5 * window.innerHeight + 'px'; //fix because vh doesn't work in safari
 	}
 
+	setContentWidth();
 	window.addEventListener("resize", setContentWidth);
 }

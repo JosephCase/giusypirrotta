@@ -16,7 +16,7 @@
         echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}/CSS/style.css?version=1.2'>";
         echo "<link rel='stylesheet' type='text/css' href='{$rootHelper}/CSS/{$style}.css?version=1.1'>";
 
-        if ($style == "workPage") {
+        if ($style == "workPage" or $style == "videoPage") {
             echo "<script src='{$rootHelper}/js/workPage.js'></script>";
         }       
         echo "<script src='{$rootHelper}/js/images.js'></script>"; 
