@@ -1,54 +1,54 @@
 <!--Helpers-->
 <?php 
-    require_once '../../helpers/rootResolver.php';
-	$media_content_dir = substr(getcwd(), strlen($root));
+    $path_to_root = "../../";
+    $media_content_dir = $path_to_root."media_content/".basename(dirname(getcwd()))."/".basename(getcwd());
     $style = 'videoPage';
     $section = 'moving-image';
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
-		require_once($root."/head.php");
+		require_once($path_to_root."head.php");
     ?>
 	<body class="english">
 		<div class="content">
 
 			<?php 
-				require_once($root."/header.php");
+				require_once($path_to_root."header.php");
             ?>
 
             <div class="title">
 				<h3>Vanishing Point</h3>				
-				<p>Video part of the installation <a href="<?=$rootHelper?>/work/vanishing_point">Vanishing Point</a>, central projection of the 3 channels video projection, 4&rsquo;45&rsquo;&rsquo;, loop, no sound, 2012</p>
+				<p>Video part of the installation <a href="<?=$path_to_root?>work/vanishing_point">Vanishing Point</a>, central projection of the 3 channels video projection, 4&rsquo;45&rsquo;&rsquo;, loop, no sound, 2012</p>
 			</div>	
 
 			<div class="videoContent">	            	
-				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_01_o.jpg">
-					<source src="<?=$media_content_root.$media_content_dir?>/video_01.webm" type="video/webm">
-					<source src="<?=$media_content_root.$media_content_dir?>/video_01.ogg" type="video/ogg">
-					<source src="<?=$media_content_root.$media_content_dir?>/video_01.mp4" type="video/mp4">
+				<video controls poster="<?=$media_content_dir?>/wallpaper_01_o.jpg">
+					<source src="<?=$media_content_dir?>/video_01.webm" type="video/webm">
+					<source src="<?=$media_content_dir?>/video_01.ogg" type="video/ogg">
+					<source src="<?=$media_content_dir?>/video_01.mp4" type="video/mp4">
 				</video>
 			</div>
 			<div class="videoContent">				
-				<video controls poster="<?=$media_content_root.$media_content_dir?>/wallpaper_02_o.jpg">
-					<source src="<?=$media_content_root.$media_content_dir?>/video_02.webm" type="video/webm">
-					<source src="<?=$media_content_root.$media_content_dir?>/video_02.ogg" type="video/ogg">
-					<source src="<?=$media_content_root.$media_content_dir?>/video_02.mp4" type="video/mp4">
+				<video controls poster="<?=$media_content_dir?>/wallpaper_02_o.jpg">
+					<source src="<?=$media_content_dir?>/video_02.webm" type="video/webm">
+					<source src="<?=$media_content_dir?>/video_02.ogg" type="video/ogg">
+					<source src="<?=$media_content_dir?>/video_02.mp4" type="video/mp4">
 				</video>
 			</div>
 
 			<div class="title">
-				<p>B&amp;W Film, no sound, 10&rsquo; 39&rsquo;&rsquo; 2012,<br />Film extract, Film part of the Installation <a href="<?=$rootHelper?>/work/vanishing_point">Vanishing Point</a></p>
+				<p>B&amp;W Film, no sound, 10&rsquo; 39&rsquo;&rsquo; 2012,<br />Film extract, Film part of the Installation <a href="<?=$path_to_root?>/work/vanishing_point">Vanishing Point</a></p>
 			</div>	
 
 			<?php							
-				$files = glob($absolute_media_content_root.$media_content_dir.'/images/*_o.jpg');
+				$files = glob($media_content_dir.'/images/*_o.jpg');
 				if (count($files) > 0) {
 
 					echo "<div class='frames'>";
 					foreach($files as $abs_file) {
 						$file = basename($abs_file);
-						echo "<img data-img='".$media_content_root.$media_content_dir."/images/".$file."' />";
+						echo "<img data-img='".$media_content_dir."/images/".$file."' />";
 					}
 					echo "</div>";
 
@@ -63,7 +63,7 @@
 			</div>
 			
 			<?php
-				require_once($root."/footer.php");
+				require_once($path_to_root."footer.php");
             ?>
 
 		</div>

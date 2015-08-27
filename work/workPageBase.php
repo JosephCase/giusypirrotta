@@ -1,7 +1,7 @@
 <!--Helpers-->
 <?php 
-    require_once '../../helpers/rootResolver.php';
-	$media_content_dir = substr(getcwd(), strlen($root));
+    $path_to_root = "../../";
+	$media_content_dir = $path_to_root."media_content/".basename(dirname(getcwd()))."/".basename(getcwd());
     $style = 'workPage';
     if (!isset($section)) {
     	$section = 'works';
@@ -9,13 +9,13 @@
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<?php 
-		require_once($root."/head.php");
+		require_once($path_to_root."head.php");
     ?>
 	<body class="english">
 		<div class="content">
 
 			<?php 
-				require_once($root."/header.php");
+				require_once($path_to_root."header.php");
             ?>	
 
 
@@ -28,11 +28,12 @@
             ?>
 
 			<div class="images">
-				<?php							
-					$files = glob($absolute_media_content_root.$media_content_dir.'/images/*_o.jpg');
+				<?php
+					$path = $media_content_dir.'/images/';							
+					$files = glob($path."*_o.jpg");
 					foreach($files as $abs_file) {
 						$file = basename($abs_file);
-						echo "<img data-img='".$media_content_root.$media_content_dir."/images/".$file."' />";
+						echo "<img data-img='{$path}{$file}' />";
 					}
 				?>      
 			</div>
@@ -46,7 +47,7 @@
             ?>
 			
 			<?php
-				require_once($root."/footer.php");
+				require_once($path_to_root."footer.php");
             ?>
 
 		</div>
