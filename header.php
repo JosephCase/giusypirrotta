@@ -2,7 +2,7 @@
 <p class="lang english" onclick="Language.changeLanguage();">ITA</p>
 
 <?php 
-	echo "<h5 id='test-box' style='position: absolute; top: 0;'></h5>";
+	// echo "<h5 id='test-box' style='position: absolute; top: 0;'></h5>";
 	echo "<h1><a href='{$rootHelper}/'>Giusy Pirrotta</a></h1>";
 ?>
 

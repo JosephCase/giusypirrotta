@@ -6,7 +6,7 @@ function Images() {
 
 	var aImages = document.getElementsByTagName('img');
 	
-	document.getElementById("test-box").innerText = aImages[0].clientWidth + " x " +  window.devicePixelRatio + " = "  + aImages[0].clientWidth * window.devicePixelRatio;
+	// document.getElementById("test-box").innerText = aImages[0].clientWidth + " x " +  window.devicePixelRatio + " = "  + aImages[0].clientWidth * window.devicePixelRatio;
 
 	showImage(0); // show the first image
 
