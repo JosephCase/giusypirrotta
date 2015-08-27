@@ -34,9 +34,6 @@ video.portrait {
 	height: auto;
 	width: 100%;
 }
-video:hover {
-	cursor: pointer;
-}
 
 div.frames {
 	margin: 20px 0;

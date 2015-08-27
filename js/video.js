@@ -16,9 +16,9 @@ function Video(video) {
 		video.className = video.className += 'portrait';
 	}
 
-	video.addEventListener("click", function() {
-		this.play();
-	});
+	// video.addEventListener("click", function() {
+	// 	this.play();
+	// });
 
 	// video.addEventListener("click", clickHandler);
 
