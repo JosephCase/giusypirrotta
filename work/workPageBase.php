@@ -41,7 +41,7 @@
 			<?php
 				if(file_exists("pageHeading.php")) {
 					echo "<div class='workDescription'>";
-		            include_once("pagetext.php");
+		            include_once("pageText.php");
 		            echo "</div>";				
 				}
             ?>

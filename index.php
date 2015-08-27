@@ -48,7 +48,7 @@
                 </div>
             </a>
             <a href="work/enlighten">
-                <img data-img="<?=$path_to_root?>media_content/work/Enlighten/mainImage_o.jpg" />
+                <img data-img="<?=$path_to_root?>media_content/work/enlighten/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Enlighten</p>
                 </div>

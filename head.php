@@ -12,9 +12,9 @@
 
     <!--CSS-->
     <?php
-        echo "<link rel='stylesheet' type='text/css' href='{$path_to_root}CSS/reset.css?version=1.0'>";
-        echo "<link rel='stylesheet' type='text/css' href='{$path_to_root}CSS/style.css?version=1.2'>";
-        echo "<link rel='stylesheet' type='text/css' href='{$path_to_root}CSS/{$style}.css?version=1.1'>";
+        echo "<link rel='stylesheet' type='text/css' href='{$path_to_root}css/reset.css'>";
+        echo "<link rel='stylesheet' type='text/css' href='{$path_to_root}css/style.css'>";
+        echo "<link rel='stylesheet' type='text/css' href='{$path_to_root}css/{$style}.css'>";
 
         if ($style == "workPage" or $style == "videoPage") {
             echo "<script src='{$path_to_root}js/workPage.js'></script>";
