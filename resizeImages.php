@@ -22,8 +22,8 @@
                 $dirs = glob($dir."/*", GLOB_ONLYDIR);
                 if (count($files) > 0) {
                     foreach($files as $file) {
-                        // resizeImage($file, 1400, "_l");
-                        // resizeImage($file, 900, "_m");
+                        resizeImage($file, 1400, "_l");
+                        resizeImage($file, 900, "_m");
                         resizeImage($file, 600, "_s");
                     }
                 } 
@@ -114,7 +114,7 @@
                 echo "<p>".$file."</p>";
             }
 
-            resizeImages("media_content/moving-image");
+            resizeImages("media_content");
         ?>
     </body>
 </html>
