@@ -64,6 +64,7 @@ a {
 body {
 	background-color: #fff;
 	overflow-x: hidden;
+	position: relative;
 }
 
 .content {

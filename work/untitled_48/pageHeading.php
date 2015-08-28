@@ -1,6 +1,6 @@
 <div class="text english">
 	<h3>Untitled_48</h3>
-	<p>Slide projector 80 slides loop, 2 super 8 projector loop 7'', Toughned glass panels.</br>Installation view at Elthorn Studio London</p>
+	<p>Slide projector 80 slides loop, 2 super 8 projector loop 7'', Toughened glass panels.</br>Installation view at Elthorn Studio London</p>
 </div>
 
 <div class="text italian">

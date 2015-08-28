@@ -1,5 +1,5 @@
 <div class="text english">
-	<p>The drama of a single day comes from seven found photographs that depict a view of the Grand Canyon at different hours of the day.</br>The found pictures refer to this time</br>6:02 am-8:35 am-12:02 pm-3:55 pm- 4:31 pm &ndash; 6:35 pm 7: pm</p>
+	<p>The drama of a single day comes from seven found photographs that depict a view of the Grand Canyon at different hours of the day.</br>The found pictures refer to this time</br>6:02am - 8:35am - 12:02pm - 3:55pm - 4:31pm - 6:35pm - 7pm</p>
 	<p>I digitally manipulated the colours of the 7 found images in order to reconstruct the total day light in 24 hours, recreating a total of 24 slides</p>
 </div>
 
