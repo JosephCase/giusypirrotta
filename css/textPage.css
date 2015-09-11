@@ -35,6 +35,14 @@ div.text-circle {
     margin-left: -525px;
 }
 
+.bio div.text-circle {
+	border-color: #DB1694;
+}
+
+.contact div.text-circle {
+	border-color: #DD68C8;
+}
+
 div.text-circle * {
 	   text-align: center;
     position: relative;

@@ -10,7 +10,7 @@
         require_once $path_to_root.'head.php';
     ?>  
     <body class="english">
-        <div class="content"> 
+        <div class="content statement"> 
             <?php 
                 require_once $path_to_root.'header.php';
             ?>

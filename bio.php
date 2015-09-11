@@ -9,7 +9,7 @@
         require_once 'head.php';
     ?>    
     <body class="english">
-        <div class="content"> 
+        <div class="content bio"> 
             <?php 
                 require_once 'header.php';
             ?>
