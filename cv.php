@@ -1,6 +1,6 @@
 <!--Helpers-->
 <?php 
-    $path_to_root = "";
+    $path_to_root = "/";
     $style = 'textPage';
     $section = 'cv';
 ?>

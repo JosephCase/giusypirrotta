@@ -7,13 +7,24 @@
 ?>
 
 <p class="navigation">
-<?php 
-	echo "<a ".($section === 'works' ? 'class=active' : '')." href='{$path_to_root}index.php'>Works</a><span>/</span>";
-	echo "<a ".($section === 'moving-image' ? 'class=active' : '')." href='{$path_to_root}moving-image'>Moving Image</a><span>/</span>";
-	echo "<a ".($section === 'images' ? 'class=active' : '')." href='{$path_to_root}images'>Images</a><span>/</span>";
-	echo "<a ".($section === 'cv' ? 'class=active' : '')." href='{$path_to_root}cv.php'>CV</a><span>/</span>";
-	echo "<a ".($section === 'statement' ? 'class=active' : '')." href='{$path_to_root}statement.php'>Statement</a><span>/</span>";	
-	echo "<a ".($section === 'bio' ? 'class=active' : '')." href='{$path_to_root}bio.php'>Bio</a><span>/</span>";
-	echo "<a ".($section === 'contact' ? 'class=active' : '')." href='{$path_to_root}contact.php'>Contact</a>";
+<?php 	
+	// require_once("sql_connection.php");
+
+	$sql = "SELECT name, url FROM `navigation`\n" . "inner join page\n" . " on navigation.page_id = page.id";
+
+	$result = mysqli_query($sql_connection, $sql);
+	if(!$result) {
+		die("Query failed: " . mysqli_error($sql_connection));
+	}
+
+	if (mysqli_num_rows($result) > 0) {
+	    // output data of each row
+
+	    while($row = mysqli_fetch_assoc($result)) {
+			echo "<a ".($section === $row["url"] ? 'class=active' : '')." href='{$path_to_root}{$row["url"]}'>{$row["name"]}</a><span>/</span>";
+	    }
+	} else {
+	    echo "<p>ERROR: NO RESULTE RETURNED</p>";
+	}
 ?>
 </p>

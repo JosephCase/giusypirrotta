@@ -1,8 +1,8 @@
 <!--Helpers-->
 <?php 
-    $path_to_root = "";
+    $path_to_root = "/";
     $style = 'homepage';
-    $section = 'works';
+    $section = '';
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,7 +17,38 @@
         ?>
 
         <div class="portfolio_links">
-            <a href="work/lightsign_rainbow">
+
+        <?php 
+            $sql = "select name, url, mainImage_url
+                        from (SELECT id FROM `page`
+                            WHERE url = '{$sql_url}') as parentPage
+                                inner join page
+                                    on page.parentPage_id = parentPage.id";
+
+            $result = mysqli_query($sql_connection, $sql);
+            if(!$result) {
+                die("Query failed: " . mysqli_error($sql_connection));
+            }
+
+            if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+
+                while($row = mysqli_fetch_assoc($result)) {
+
+                    echo "<a href='work/{$row['url']}'>
+                            <img data-img='{$path_to_root}media_content/work/{$row['mainImage_url']}' />
+                            <div class='overlay'>
+                                <p>{$row['name']}</p>
+                            </div>
+                        </a>";
+
+                }
+            } else {
+                echo "<p>ERROR: NO RESULTE RETURNED</p>";
+            }
+        ?>
+
+            <!-- <a href="work/lightsign_rainbow">
                 <img data-img="<?=$path_to_root?>media_content/work/lightsign_rainbow/mainImage_o.jpg" />
                 <div class="overlay">
                     <p>Lightsign_Rainbow</p>
@@ -82,7 +113,7 @@
                 <div class="overlay">
                     <p>The Drama of a Single day</p>
                 </div>
-            </a>            
+            </a>             -->
         </div>
 
          <?php 

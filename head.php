@@ -1,3 +1,11 @@
+<?php 
+    require_once("sql_connection.php");
+    if (basename($_SERVER['PHP_SELF'], '.php') == 'index') {
+        $sql_url = $table = mysqli_real_escape_string($sql_connection, basename(dirname($_SERVER['PHP_SELF'])));
+    } else {
+        $sql_url = $table = mysqli_real_escape_string($sql_connection, basename($_SERVER['PHP_SELF'], '.php'));
+    }
+?>
 <head>
     <title>artist: Giusy Pirrotta</title>
 
