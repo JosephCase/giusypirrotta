@@ -19,42 +19,35 @@
             ?>
 
             <div class="portfolio_links">
-                <a href="the-quality-of-scale">
-                    <img data-img="<?=$path_to_root?>media_content/moving-image/the-quality-of-scale/mainImage_o.jpg" />
-                    <div class="overlay">
-                        <p>The Quality of "Scale"</p>
-                    </div>
-                </a> 
-                <a href="rgb">
-                    <img data-img="<?=$path_to_root?>media_content/moving-image/rgb/mainImage_o.jpg" />
-                    <div class="overlay">
-                        <p>RGB</p>
-                    </div>
-                </a>   
-                <a href="vanishing-point">
-                    <img data-img="<?=$path_to_root?>media_content/moving-image/vanishing-point/mainImage_o.jpg" />
-                    <div class="overlay">
-                        <p>Vanishing Point</p>
-                    </div>
-                </a>   
-                <a href="chroma">
-                    <img data-img="<?=$path_to_root?>media_content/moving-image/chroma/mainImage_o.jpg" />
-                    <div class="overlay">
-                        <p>Chroma</p>
-                    </div>
-                </a>   
-                <a href="enlighten">
-                    <img data-img="<?=$path_to_root?>media_content/moving-image/enlighten/mainImage_o.jpg" />
-                    <div class="overlay">
-                        <p>Enlighten</p>
-                    </div>
-                </a>   
-                <a href="secret">
-                    <img data-img="<?=$path_to_root?>media_content/moving-image/secret/mainImage_o.jpg" />
-                    <div class="overlay">
-                        <p>Secret</p>
-                    </div>
-                </a>          
+               <?php 
+                    $sql = "select name, url, mainImage_url
+                                from (SELECT id FROM `page`
+                                    WHERE url = '{$sql_url}') as parentPage
+                                        inner join page
+                                            on page.parentPage_id = parentPage.id";
+
+                    $result = mysqli_query($sql_connection, $sql);
+                    if(!$result) {
+                        die("Query failed: " . mysqli_error($sql_connection));
+                    }
+
+                    if (mysqli_num_rows($result) > 0) {
+                        // output data of each row
+
+                        while($row = mysqli_fetch_assoc($result)) {
+
+                            echo "<a href='{$sql_url}/{$row['url']}'>
+                                    <img data-img='{$path_to_root}media_content/{$sql_url}/{$row['mainImage_url']}' />
+                                    <div class='overlay'>
+                                        <p>{$row['name']}</p>
+                                    </div>
+                                </a>";
+
+                        }
+                    } else {
+                        echo "<p>ERROR: NO RESULTS RETURNED</p>";
+                    }
+                ?>         
             </div>
 
              <?php 
