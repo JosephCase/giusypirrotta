@@ -1,5 +1,6 @@
 div.content {
 	max-width: 150vh;
+	padding: 60px 10px 0 10px;
 }
 
 .workDetail{
@@ -18,14 +19,13 @@ div.content {
 	margin-bottom: 20px;
 }
 
-.text p {
+p {
 	margin-top: 10px;
 	font-weight: 500;
 }
 
-.workDetail p{
+p.p14{
 	font-size: 14px;
-	margin-top: 0;
 }
 .workDescription{
 	margin-top: 52px;
@@ -36,13 +36,13 @@ div.content {
 }
 
 
-.images img {
+img {
 	margin: 150px auto;
 	display: block;
 	width: 100%;
 }
 
-.images img:first-of-type, .images img:last-of-type {
+img:first-of-type, img:last-of-type {
 	margin: 60px auto;
 }
 
@@ -51,7 +51,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-	.images img, .images video {
+	img, video {
 		margin: 60px auto;
 	}
 }

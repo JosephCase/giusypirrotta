@@ -1,5 +1,5 @@
-<p class="lang italian" onclick="Language.changeLanguage();">ENG</p>
-<p class="lang english" onclick="Language.changeLanguage();">ITA</p>
+<p class="lang ita" onclick="Language.changeLanguage();">ENG</p>
+<p class="lang eng" onclick="Language.changeLanguage();">ITA</p>
 
 <?php 
 	// echo "<h5 id='test-box' style='position: absolute; top: 0;'></h5>";

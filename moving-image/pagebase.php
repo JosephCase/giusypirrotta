@@ -10,7 +10,7 @@
 	<?php 
 		require_once($path_to_root."head.php");
     ?>
-	<body class="english">
+	<body class="eng">
 		<div class="content">
 
 			<?php 

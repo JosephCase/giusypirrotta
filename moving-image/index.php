@@ -11,7 +11,7 @@
         require_once($path_to_root.'head.php');
     ?>
 
-    <body class="english">
+    <body class="eng">
         <div class="content">
 
             <?php 
@@ -36,7 +36,7 @@
 
                         while($row = mysqli_fetch_assoc($result)) {
 
-                            echo "<a href='{$sql_url}/{$row['url']}'>
+                            echo "<a href='{$row['url']}'>
                                     <img data-img='{$path_to_root}media_content/{$sql_url}/{$row['mainImage_url']}' />
                                     <div class='overlay'>
                                         <p>{$row['name']}</p>

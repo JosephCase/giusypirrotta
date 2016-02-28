@@ -19,11 +19,11 @@ var Language = new function () {
 	}
 	this.changeLanguage = function () {
 		console.log ('changeLanguage');
-		if (!sessionStorage.language || sessionStorage.language == 'english') {
-			sessionStorage.language = 'italian';
+		if (!sessionStorage.language || sessionStorage.language == 'eng') {
+			sessionStorage.language = 'ita';
 		}
-		else if (sessionStorage.language == 'italian') {
-			sessionStorage.language = 'english';
+		else if (sessionStorage.language == 'ita') {
+			sessionStorage.language = 'eng';
 		}
 		this.setLanguage();
 	};

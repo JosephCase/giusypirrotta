@@ -8,7 +8,7 @@
     <?php 
         require_once 'head.php';
     ?>    
-    <body class="english">
+    <body class="eng">
         <div class="content bio"> 
             <?php 
                 require_once 'header.php';

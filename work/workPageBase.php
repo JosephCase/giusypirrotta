@@ -11,43 +11,57 @@
 	<?php 
 		require_once($path_to_root."head.php");
     ?>
-	<body class="english">
+	<body class="eng">
 		<div class="content">
 
 			<?php 
+				echo $sql_url;
 				require_once($path_to_root."header.php");
-            ?>	
+       
 
-
-			<?php
-				if(file_exists("pageHeading.php")) {
-					echo "<div class='workDetail'>";
-		            include_once("pageHeading.php");
-		            echo "</div>";				
-				}
-            ?>
-
-			<div class="images">
-				<?php
-					$path = $media_content_dir.'/images/';							
-					$files = glob($path."*_o.jpg");
-					foreach($files as $abs_file) {
-						$file = basename($abs_file);
-						echo "<img data-img='{$path}{$file}' />";
-					}
-				?>      
-			</div>
-
-			<?php
-				if(file_exists("pageHeading.php")) {
-					echo "<div class='workDescription'>";
-		            include_once("pageText.php");
-		            echo "</div>";				
-				}
-            ?>
+            $sql = "SELECT type, content, size, language FROM page
+            			inner join content
+            				on content.page_id = page.id
+            					WHERE url = '{$sql_url}'";
 			
-			<?php
-				require_once($path_to_root."footer.php");
+			$result = mysqli_query($sql_connection, $sql);
+            if(!$result) {
+                die("Query failed: " . mysqli_error($sql_connection));
+            }
+
+            if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) {
+
+                    switch ($row['type']) {
+					    case "p":
+					        echo "<p";
+					        if ($row['size'] != 0 || $row['language'] != NULL) {
+					        	echo " class='";
+					        	if ($row['size'] != 0) {
+					        		echo "p{$row['size']} ";
+					        	}
+					        	if ($row['language'] != NULL) {
+					        		echo "{$row['language']}";
+					        	}
+					        	echo "'";
+					        }
+					        echo ">{$row['content']}</p>";
+					        break;
+					    case "img":
+					        echo "<img data-img='{$path_to_root}media_content/work/{$sql_url}/images/{$row['content']}' />";
+					        break;
+					    default:
+					        echo "invalid type";
+					}
+
+                }
+            } else {
+                echo "<p>ERROR: NO RESULTS RETURNED</p>";
+            }
+
+			require_once($path_to_root."footer.php");
+
             ?>
 
 		</div>

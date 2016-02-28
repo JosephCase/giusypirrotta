@@ -160,6 +160,7 @@ footer h5 {
 footer p {
 	line-height: 20px;
 	font-size: 12px;
+	margin-top: 0;
 }
 
 .lang {
@@ -174,11 +175,11 @@ footer p {
 	/*background-color: rgba(300,300,300,0.6);*/
 }
 
-body.italian .english {
+body.ita .eng {
 		display: none;
 }
 
-body.english .italian {
+body.eng .ita {
 		display: none;
 }
 

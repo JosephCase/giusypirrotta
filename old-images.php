@@ -21,7 +21,7 @@
         <script src="js/language.js"></script>
 
     </head>
-    <body class="english">
+    <body class="eng">
         <div class="content">
 
             <?php 
