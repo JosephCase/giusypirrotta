@@ -9,12 +9,9 @@ div.content {
 }
 
 
-.text {
-	margin-bottom: 20px;
-	padding: 0 10px;
-}
 
-.text h3 {
+
+h3 {
 	font-size: 19px;
 	margin-bottom: 20px;
 }

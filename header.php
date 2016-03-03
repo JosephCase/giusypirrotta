@@ -16,12 +16,12 @@
 	if(!$result) {
 		die("Query failed: " . mysqli_error($sql_connection));
 	}
-
+	$i = 0;
 	if (mysqli_num_rows($result) > 0) {
-	    // output data of each row
-
 	    while($row = mysqli_fetch_assoc($result)) {
-			echo "<a ".($section === $row["url"] ? 'class=active' : '')." href='{$path_to_root}{$row["url"]}'>{$row["name"]}</a><span>/</span>";
+	    	$i++;
+			echo "<a ".($section === $row["url"] ? 'class=active' : '')." href='{$path_to_root}{$row["url"]}'>{$row["name"]}</a><span>" . ($i < mysqli_num_rows($result) ? "/" : "") ."</span>";
+			
 	    }
 	} else {
 	    echo "<p>ERROR: NO RESULTE RETURNED</p>";
