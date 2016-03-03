@@ -1,7 +1,7 @@
 <div class="text english">
 	<h3>A Disruption in Linear Thinking</h3>
-	<p>slide projector show with synchronized sound 20&rsquo;59&rsquo;&rsquo;, loop, size variable, 2011</p>
-	<p>installation view at Crypt Gallery London and at Lethaby Gallery London</p>
+	<p>Slide projector show with synchronized sound 20&rsquo;59&rsquo;&rsquo;, loop, size variable, 2011</p>
+	<p>Installation view at Crypt Gallery London and at Lethaby Gallery London</p>
 </div>
 
 <div class="text italian">

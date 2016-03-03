@@ -1,5 +1,5 @@
 <div class="text english">
-	<p>Untitled is a site specific project realized on 48 hours.The work comprises a slide show and 2 super 8 film projection on frosted glass.The projection is deconstructed in between the glass support were the light reflects or pass through.</p>
+	<p>Untitled is a site specific project realized on 48 hours. The work comprises a slide show and 2 super 8 film projection on frosted glass. The projection is deconstructed in between the glass support were the light reflects or passes through.</p>
 </div>
 
 <div class="text italian">

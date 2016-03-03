@@ -1,6 +1,6 @@
 <div class="text english">
-	<p>The light box is made with medium format glass slides, each of them has 3 layers whose images are overlapped, creating surreal landscape view. The slide projector is used for looking in its inside. Three slides are placed behind the lens, but their thickness block the light/projection to come out, creating the inverse effect of looking inside, flashing and pointing a sort of tridimensional miniature. I designed an octagonal carousel, the viewer can have a look inside the lens on 8 different groups of 3 overlapped slides</p>
-	<p>The found slides depict the journeys of an english through italian sightseeing.</p>
+	<p>The light box is made with medium format glass slides, each of them has 3 layers whose images are overlapped, creating a surreal landscape view. The slide projector is used for looking in its inside. Three slides are placed behind the lens, but their thickness block the light/projection to come out, creating the inverse effect of looking inside, flashing and pointing a sort of tri-dimensional miniature. I designed an octagonal carousel, the viewer can have a look inside the lens on 8 different groups of 3 overlapped slides</p>
+	<p>The found slides depict the journeys of English through Italian sightseeing.</p>
 </div>
 
 <div class="text italian">

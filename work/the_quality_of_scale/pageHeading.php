@@ -1,6 +1,6 @@
 <div class="text english">
     <h3>The Quality of &quot;Scale&quot;</h3>
-    <p>Exhibition view at Muratcentoventidue Gallery</br>Steel trunk of pyramids, magnifying lens, 35mm and medium format slides. 16mm color film, no sound, 5'45'' transferred DVD, loop, back projection on glass slide show 80 slides,loop, video projection 4'45'' color, loop</p>
+    <p>Exhibition view at Muratcentoventidue Gallery</br>Steel trunk of pyramids, magnifying lens, 35mm and medium format slides. 16mm colour film, no sound, 5'45'' transferred DVD, loop, back projection on glass slide show 80 slides, loop, video projection 4'45'' colour, loop</p>
 </div>
 
 <div class="text italian">

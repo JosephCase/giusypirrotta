@@ -37,12 +37,10 @@
             }
             function resizeImage($file, $newWidth, $extension) {
 
-                set_time_limit(20);
-
-                list_name($file);
-
                 $image = @imagecreatefromjpeg($file);
                 $new_file = str_replace("_o.jpg", $extension.".jpg", $file);
+
+                list_name($new_file);
 
                 // if(file_exists($new_file)) {
                 //     unlink($new_file);     //remove old version of file
@@ -114,7 +112,7 @@
                 echo "<p>".$file."</p>";
             }
 
-            resizeImages("media_content");
+            resizeImages("media_content/moving-image");
         ?>
     </body>
 </html>

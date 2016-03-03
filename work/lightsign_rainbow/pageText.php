@@ -1,5 +1,5 @@
 <div class="text english">
-	<p>LightSign_Rainbow is the first of a series of Light Signs and Optical Boxes which examine the relationship between light consistency and color perception through the use of a sculptural body mass, used to give shape to the otherwise evanescent and immaterial aspects of light.</p>
+	<p>LightSign_Rainbow is the first of a series of Light Signs and Optical Boxes which examine the relationship between light consistency and colour perception through the use of a sculptural body mass, used to give shape to the otherwise evanescent and immaterial aspects of light.</p>
 </div>
 
 <div class="text italian">

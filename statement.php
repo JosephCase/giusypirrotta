@@ -1,18 +1,18 @@
 <!--Helpers-->
 <?php 
-    require_once 'helpers/rootResolver.php';
+    $path_to_root = "";
     $style = 'textPage';
     $section = 'statement';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     
     <?php 
-        require_once $root.'/head.php';
+        require_once $path_to_root.'head.php';
     ?>  
     <body class="english">
-        <div class="content"> 
+        <div class="content statement"> 
             <?php 
-                require_once $root.'/header.php';
+                require_once $path_to_root.'header.php';
             ?>
             <div class="text-circle">
                 <!--English-->
@@ -25,7 +25,7 @@
                                         Il mio intento &egrave; quello di dare forma alla luce in modo da creare un esperienza tattile di un fenomeno evanescente. Lo scopo dei miei interventi &egrave; quello di mettere in discussione le condizioni del vedere evidenziando la relazione ambigua tra l&rsquo;architettura dell&rsquo;immagine in movimento, il contesto espositivo come spazio fisico installativo e l&rsquo;esperienza dello spettatore.</p>
             </div>
             <?php 
-                require_once $root.'/footer.php';
+                require_once $path_to_root.'footer.php';
             ?>
         </div>
     </body>
