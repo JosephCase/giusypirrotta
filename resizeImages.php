@@ -66,7 +66,7 @@
 
                 // //Save image
                 if (imagetypes() & IMG_JPG) {
-                    imagejpeg($resizedImage, $new_file, 90);
+                    imagejpeg($resizedImage, $new_file, 100);
                     imagedestroy($image);
                     imagedestroy($resizedImage);
                 }
@@ -112,7 +112,7 @@
                 echo "<p>".$file."</p>";
             }
 
-            resizeImages("media_content/moving-image");
+            resizeImages("media_content/work/botany");
         ?>
     </body>
 </html>
