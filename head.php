@@ -29,7 +29,12 @@
         }       
         echo "<script src='{$path_to_root}js/images.js'></script>"; 
         echo "<script src='{$path_to_root}js/language.js'></script>";
-        echo "<script src='{$path_to_root}js/video.js'></script>"; 
+        echo "<script src='{$path_to_root}js/video.js'></script>";
+
+        spl_autoload_register(function($class){
+            require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+        });
+
     ?>
 
 
