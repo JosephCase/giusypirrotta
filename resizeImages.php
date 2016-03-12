@@ -35,10 +35,12 @@
                     }
                 }            
             }
+            
+
             function resizeImage($file, $newWidth, $extension) {
 
-                $image = @imagecreatefromjpeg($file);
-                $new_file = str_replace("_o.jpg", $extension.".jpg", $file);
+                $image = new Imagick(realpath($file));
+                $new_file = str_replace("_o.jpg", $extension.".jpg", realpath($file));
 
                 list_name($new_file);
 
@@ -46,29 +48,14 @@
                 //     unlink($new_file);     //remove old version of file
                 // }
                 
-                if (imagesx($image) < $newWidth) { //if the image is smaller than it needs to be, do not scale up
-                    $newWidth = imagesx($image);
+                if ($image->getImageWidth() < $newWidth) { //if the image is smaller than it needs to be, do not scale up
+                    $newWidth = $image->getImageWidth();
                 }
 
-                // Get new dimensions
-                $ratio = imagesy($image) / imagesx($image);
-                $newHeight = round($newWidth * $ratio);
+                $image->resizeImage($newWidth,0,Imagick::FILTER_LANCZOS,1);
 
-                //Resize image
-                $resizedImage = imagecreatetruecolor($newWidth, $newHeight);
-
-                imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $newWidth, $newHeight, imagesx($image), imagesy($image));
-
-                // Sharpen Image
-                if ($extension == "_s") {
-                    $resizedImage = sharpen($resizedImage);
-                }
-
-                // //Save image
-                if (imagetypes() & IMG_JPG) {
-                    imagejpeg($resizedImage, $new_file, 100);
-                    imagedestroy($image);
-                    imagedestroy($resizedImage);
+                if(!$image->writeImage($new_file)) {
+                    echo "Unable to save image";
                 }
 
                                
@@ -101,18 +88,29 @@
                 return $image;
             }
 
-
-            function clean($file) {                
-                if (strpos($file,'_o.jpg') == false) {
-                    unlink($file);
-                }
+            function clean ($dir) {
+                $files = glob($dir.'/*.jpg');                
+                $dirs = glob($dir."/*", GLOB_ONLYDIR);
+                if (count($files) > 0) {
+                    foreach($files as $file) {            
+                        if (strpos($file,'_o.jpg') == false) {
+                            unlink($file);
+                        }
+                    }
+                } 
+                if (count($dirs) > 0) {
+                    foreach($dirs as $sub_dir) {
+                        clean($sub_dir);
+                    }
+                }            
             }
 
             function list_name($file) {
                 echo "<p>".$file."</p>";
             }
 
-            resizeImages("media_content/work/botany");
+            // clean("media_content/work/lusterware_pineapple");
+            resizeImages("media_content/work/lusterware_pineapple");
         ?>
     </body>
 </html>
