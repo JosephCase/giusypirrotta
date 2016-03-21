@@ -110,7 +110,7 @@
             }
 
             // clean("media_content/work/lusterware_pineapple");
-            resizeImages("media_content/work/lusterware_pineapple");
+            resizeImages("media_content/images");
         ?>
     </body>
 </html>
