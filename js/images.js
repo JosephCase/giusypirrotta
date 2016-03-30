@@ -6,9 +6,10 @@ function Images() {
 
 	var aImages = document.getElementsByTagName('img');
 	
-	// document.getElementById("test-box").innerText = aImages[0].clientWidth + " x " +  window.devicePixelRatio + " = "  + aImages[0].clientWidth * window.devicePixelRatio;
-
-	showImage(0); // show the first image
+	
+	if(aImages.length != 0) {
+		showImage(0); // show the first image
+	}
 
 	//Loop through images in order
 	function showImage(i) {
@@ -46,22 +47,14 @@ function Images() {
 
 	function getSizes(src) {
 		var aSizes = [];
-		// if (src.indexOf("thumb") > -1) {
-			aSizes[0] = 1400;
-			aSizes[1] = 900;
-			aSizes[2] = 600;
-		// } else {
-		// 	aSizes[0] = 1200;
-		// 	aSizes[1] = 1000;
-		// 	aSizes[2] = 700;
-		// }
-		console.log("aSizes: " + aSizes);
+		aSizes[0] = 1400;
+		aSizes[1] = 900;
+		aSizes[2] = 600;
 		return aSizes;
 	}
 
 	function calculatePhysicalWidth (width) {
 		var multiplier = (window.devicePixelRatio >= 2) ? 2 : 1;
-		console.log("multiplier: " + multiplier);
 		return width * multiplier;
 	}
 

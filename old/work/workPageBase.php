@@ -40,6 +40,8 @@
 	            				on content.page_id = page.id
 	            					WHERE url = '{$sql_url}'";
 				
+	            echo $sql;
+
 				$result = mysqli_query($sql_connection, $sql);
 	            if(!$result) {
 	                die("Query failed: " . mysqli_error($sql_connection));

@@ -3,22 +3,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 var Language = new function () {
-	console.log ('Language');
 	this.construct = function () {
-		console.log	('construct');
 		this.setLanguage();
 	}
 	this.setLanguage = function() {
-		console.log	('setLanguage');
-		console.log(sessionStorage.language);
 		if (sessionStorage.language) {
-			console.log(sessionStorage.language);
 			var oBody = document.getElementsByTagName('body')[0];
 			oBody.className = sessionStorage.language;
 		}
 	}
 	this.changeLanguage = function () {
-		console.log ('changeLanguage');
 		if (!sessionStorage.language || sessionStorage.language == 'eng') {
 			sessionStorage.language = 'ita';
 		}
