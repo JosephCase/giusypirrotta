@@ -3,13 +3,6 @@
     $styleSheet = 'sectionPage.css';
     $section = '';    
     require_once("sql_connection.php");
-
-    // Get the page URL to use in the SQL query
-    if(count($url_array) == 1 || $url_array[1] == '' || $url_array[1] == 'index' || $url_array[1] == 'index.html' || $url_array[1] == 'index.php') {
-        $sql_url = 'work';
-    } else {
-        $sql_url = mysqli_real_escape_string($sql_connection, $url_array[1]);
-    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,13 +17,12 @@
         <?php 
             require_once 'header.php';
         ?>
-
         <div class="portfolio_links">
 
         <?php 
             $sql = "select name, url, mainImage_url
                         from (SELECT id FROM `page`
-                            WHERE url = '{$sql_url}') as parentPage
+                            WHERE url = '" . mysqli_real_escape_string($sql_connection, $url_end) . "') as parentPage
                                 inner join page
                                     on page.parentPage_id = parentPage.id";
 
@@ -44,8 +36,8 @@
 
                 while($row = mysqli_fetch_assoc($result)) {
 
-                    echo "<a href='/{$sql_url}/{$row['url']}'>
-                            <img data-img='/media_content/{$sql_url}/{$row['mainImage_url']}' />
+                    echo "<a href='/{$url_end}/{$row['url']}'>
+                            <img data-img='/media_content/{$url_end}/{$row['mainImage_url']}' />
                             <div class='overlay'>
                                 <p>{$row['name']}</p>
                             </div>

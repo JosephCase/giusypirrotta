@@ -18,8 +18,8 @@
 
 
         echo "<link rel='stylesheet' type='text/css' href='/css/{$styleSheet}'>";
-        if(file_exists("css/{$sql_url}.css")) {
-            echo "<link rel='stylesheet' type='text/css' href='/css/{$sql_url}.css'>";
+        if(file_exists("css/{$url_end}.css")) {
+            echo "<link rel='stylesheet' type='text/css' href='/css/{$url_end}.css'>";
         }
 
         // if ($url_array[1] == 'work' || $url_array[1] == 'moving-image' || $url_array[1] == 'images') {

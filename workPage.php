@@ -4,13 +4,6 @@
     	$section = '';
     }  
     require_once("sql_connection.php");
-
-    // Get the page URL to use in the SQL query
-    if(count($url_array) > 2 && $url_array[2] != '') {
-		$sql_url = mysqli_real_escape_string($sql_connection, $url_array[2]);
-    } else {
-    	$sql_url = $url_array[1];
-    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,13 +19,20 @@
 			use \Michelf\Markdown;
 			require_once("header.php");
 
-			$sql = "SELECT childPage.name, type, content, size, language, parentPage.url as parentPageUrl FROM page as childPage
-						left join page as parentPage
-							on parentPage.id = childPage.parentPage_id
-            			inner join content
-            				on content.page_id = childPage.id
-            					WHERE childPage.url = '{$sql_url}'                
-            					AND (parentPage.url = '{$url_array[1]}') OR (parentPage.id IS NULL)    ";
+			$sql = "SELECT childPage.name, type, content, size, language
+									FROM page as childPage
+			            			inner join content
+			            				on content.page_id = childPage.id
+			            				and childPage.url = '{$url_end}'";
+
+			if(count($url_array) == 2) {
+				// if the page has a parent directory, make sure to match that as well
+				$sql = $sql . " left join page as parentPage
+							on parentPage.id = childPage.parentPage_id            
+            				AND parentPage.url = '{$url_array[0]}'";
+			}
+
+			
 			
 			$result = mysqli_query($sql_connection, $sql);
             if(!$result) {
@@ -41,9 +41,11 @@
 
             if (mysqli_num_rows($result) > 0) {
 
-            	//get the heading
-            	echo "<h3>" . mysqli_fetch_assoc($result)['name'] . "</h3>";
-            	mysqli_data_seek($result, 0);
+            	//check to see whether to show the heading
+            	if(!in_array($url_end, $noHeader)) {
+	            	echo "<h3>" . mysqli_fetch_assoc($result)['name'] . "</h3>";
+	            	mysqli_data_seek($result, 0);	
+            	}            	
 
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) {
@@ -64,7 +66,7 @@
 					        echo ">{$row['content']}</p>";
 					        break;
 					    case "img":
-					        echo "<img data-img='/media_content/{$row['parentPageUrl']}/{$url_array[2]}/images/{$row['content']}' />";
+					        echo "<img data-img='/media_content/{$url}/images/{$row['content']}' />";
 					        break;
 				        case "text":
                                 $text = Markdown::defaultTransform($row['content']);
