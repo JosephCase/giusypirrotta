@@ -10,15 +10,15 @@
 
 	$sql = "SELECT name, url FROM `navigation`\n" . "inner join page\n" . " on navigation.page_id = page.id";
 
-	$result = mysqli_query($sql_connection, $sql);
+	$result = mysqli_query($this->sql_connection, $sql);
 	if(!$result) {
-		die("Query failed: " . mysqli_error($sql_connection));
+		die("Query failed: " . mysqli_error($this->sql_connection));
 	}
 	$i = 0;
 	if (mysqli_num_rows($result) > 0) {
 	    while($row = mysqli_fetch_assoc($result)) {
 	    	$i++;
-			echo "<a ".($section === $row["url"] ? 'class=active' : '')." href='/{$row["url"]}'>{$row["name"]}</a><span>" . ($i < mysqli_num_rows($result) ? "/" : "") ."</span>";
+			echo "<a ".(($this->url_end === $row["url"] || $this->url_array[0] === $row["url"]) ? 'class=active' : '')." href='/{$row["url"]}'>{$row["name"]}</a><span>" . ($i < mysqli_num_rows($result) ? "/" : "") ."</span>";
 			
 	    }
 	} else {

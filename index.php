@@ -1,7 +1,12 @@
 <?php
     
+    spl_autoload_register(function($class){
+        include(__DIR__ . '\\' . $class . '.php');
+        // require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+    });
+
     // Array of the section pages
-    $sections = ['work', 'moving-image', 'images'];
+    $sectionPages = ['work', 'moving-image', 'images'];
     $noHeader = ['cv', 'bio', 'statement', 'contact'];
 
     $url = trim($_SERVER['REQUEST_URI'], '/');
@@ -16,11 +21,13 @@
         }
 
         //Check if it's a section page or a work page
-        if(in_array($url_end, $sections)){
-            include_once("sectionPage.php");
+        if(in_array($url_end, $sectionPages)){
+            $page = new SectionPage($url, $url_array, $url_end, $noHeader);
         } else {
-            include_once("workPage.php");
+            $page = new WorkPage($url, $url_array, $url_end, $noHeader);
         }
+
+        $page->draw();
 
     } else {
         echo "GO TO 404";   //if it's not a good URL redirect to 404

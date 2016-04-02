@@ -17,19 +17,16 @@
 
 
 
-        echo "<link rel='stylesheet' type='text/css' href='/css/{$styleSheet}'>";
-        if(file_exists("css/{$url_end}.css")) {
-            echo "<link rel='stylesheet' type='text/css' href='/css/{$url_end}.css'>";
+        echo "<link rel='stylesheet' type='text/css' href='/css/{$this->styleSheet}'>";
+        if(file_exists("css/{$this->url_end}.css")) {
+            echo "<link rel='stylesheet' type='text/css' href='/css/{$this->url_end}.css'>";
         }
 
         // if ($url_array[1] == 'work' || $url_array[1] == 'moving-image' || $url_array[1] == 'images') {
         //     echo "<script src='/js/workPage.js'></script>";
         // }
 
-        spl_autoload_register(function($class){
-            include(__DIR__ . '\\' . $class . '.php');
-            // require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
-        });
+        
 
     ?>
     <script type='text/javascript' src='/js/images.js'></script>
