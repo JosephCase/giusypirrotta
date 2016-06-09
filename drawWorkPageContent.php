@@ -50,8 +50,14 @@
 			        echo "<img data-img='/media_content/{$this->url}/images/{$row['content']}' />";
 			        break;
 		        case "text":
+		        		echo "<div";
+		        		if ($row['language'] != NULL) {
+			        		echo " class='{$row['language']}' ";
+			        	}
+		        		echo ">";
                         $text = Markdown::defaultTransform($row['content']);
                         echo $text;
+                        echo "</div>";
                         break;
 			    default:
 			        echo "invalid type";

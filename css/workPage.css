@@ -21,9 +21,40 @@ p {
 	font-weight: 500;
 }
 
+p.p10{
+	font-size: 10px;
+}
+p.p11{
+	font-size: 11px;
+}
+p.p12{
+	font-size: 12px;
+}
+p.p13{
+	font-size: 13px;
+}
 p.p14{
 	font-size: 14px;
 }
+p.p15{
+	font-size: 15px;
+}
+p.p16{
+	font-size: 16px;
+}
+p.p17{
+	font-size: 17px;
+}
+p.p18{
+	font-size: 18px;
+}
+p.p19{
+	font-size: 19px;
+}
+p.p20{
+	font-size: 20px;
+}
+
 .workDescription{
 	margin-top: 52px;
 }
