@@ -109,8 +109,9 @@
                 echo "<p>".$file."</p>";
             }
 
-            // clean("media_content/work/lusterware_pineapple");
-            resizeImages("media_content/images");
+            // clean("media_content/work/bananas");
+            // resizeImages("media_content/work/rhapsody");
+            resizeImages("media_content/work/bananas");
         ?>
     </body>
 </html>

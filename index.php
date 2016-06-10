@@ -18,6 +18,19 @@
 
         <div class="portfolio_links">
 
+            <a href="work/rhapsody">
+                <img data-img="<?=$path_to_root?>media_content/work/rhapsody/mainImage_o.jpg" />
+                <div class="overlay">
+                    <p>Rhapsody</p>
+                </div>
+            </a>
+            <a href="work/bananas">
+                <img data-img="<?=$path_to_root?>media_content/work/bananas/mainImage_o.jpg" />
+                <div class="overlay">
+                    <p>Bananas</p>
+                </div>
+            </a>
+
             <a href="work/lusterware_pineapple">
                 <img data-img="<?=$path_to_root?>media_content/work/lusterware_pineapple/mainImage_o.jpg" />
                 <div class="overlay">
