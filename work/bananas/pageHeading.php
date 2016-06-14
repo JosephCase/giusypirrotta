@@ -1,5 +1,5 @@
 <div class="text">
 	<h3>Bananas</h3>	
-	<p>Glazed ceramic sculptures, RGB rotating lights, LED strip lights, wallpaper</p>
-	<p><i>Installation view for the shooting of Botany, KN film studio UCA Farnham 2015</i></p>
+	<p>Wallpaper, glazed ceramic, colour changing LED lights, UV light tube, mini video projector</p>
+	<p><i>Installation view at the Herbert Read Gallery, Canterbury, 2016</i></p>
 </div>
