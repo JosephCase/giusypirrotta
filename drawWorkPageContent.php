@@ -47,7 +47,7 @@
 			        echo ">{$row['content']}</p>";
 			        break;
 			    case "img":
-			        echo "<img data-img='/media_content/{$this->url}/images/{$row['content']}' />";
+			        echo "<img data-img='http://gp-cms.local:8888/content/{$row['content']}' />";
 			        break;
 		        case "text":
 		        		echo "<div";

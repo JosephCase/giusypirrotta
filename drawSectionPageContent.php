@@ -18,7 +18,7 @@
         while($row = mysqli_fetch_assoc($result)) {
 
             echo "<a href='/{$this->url_end}/{$row['url']}'>
-                    <img data-img='/media_content/{$this->url_end}/{$row['mainImage_url']}' />
+                    <img data-img='http://gp-cms.local:8888/content/{$row['mainImage_url']}' />
                     <div class='overlay'>
                         <p>{$row['name']}</p>
                     </div>

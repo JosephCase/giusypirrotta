@@ -34,11 +34,11 @@ function Images() {
 		// } else 
 
 		if (physicalWidth <= aSizes[2]) {						//large
-			new_src = src.replace("_o.jpg", "_s.jpg");
+			new_src = src.replace(".jpg", "_x" + aSizes[2] + ".jpg");
 		} else if (physicalWidth <= aSizes[1]) {						//medium
-			new_src = src.replace("_o.jpg", "_m.jpg");
+			new_src = src.replace(".jpg", "_x" + aSizes[1] + ".jpg");
 		} else {										//small
-			new_src = src.replace("_o.jpg", "_l.jpg");
+			new_src = src.replace(".jpg", "_x" + aSizes[0] + ".jpg");
 		}
 		
 		return new_src;
@@ -47,9 +47,9 @@ function Images() {
 
 	function getSizes(src) {
 		var aSizes = [];
-		aSizes[0] = 1400;
-		aSizes[1] = 900;
-		aSizes[2] = 600;
+		aSizes[0] = 1000;
+		aSizes[1] = 700;
+		aSizes[2] = 500;
 		return aSizes;
 	}
 
