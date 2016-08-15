@@ -2,7 +2,7 @@
 <p class="lang eng" onclick="Language.changeLanguage();">ITA</p>
 
 <?php 
-	echo "<h1><a href='/'>Giusy Pirrotta</a></h1>";
+	echo "<h1 class='title'><a href='/'>Giusy Pirrotta</a></h1>";
 ?>
 
 <p class="navigation">

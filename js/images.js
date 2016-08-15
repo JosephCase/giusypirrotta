@@ -19,7 +19,11 @@ function Images() {
 			if (i < aImages.length - 1) {
 				showImage(i+1);
 			}
-		}, false);		
+		}, false);
+		aImages[i].addEventListener('error', function() {
+			console.log(this.src);
+			this.src = '/image/placeholder.gif';
+		})
 	}
 
 	function chooseSize(src, width) {
@@ -29,16 +33,11 @@ function Images() {
 
 		var new_src;
 
-		// if (physicalWidth > aSizes[0]) {								//original
-		// 	return src;
-		// } else 
-
-		if (physicalWidth <= aSizes[2]) {						//large
-			new_src = src.replace(".jpg", "_x" + aSizes[2] + ".jpg");
-		} else if (physicalWidth <= aSizes[1]) {						//medium
-			new_src = src.replace(".jpg", "_x" + aSizes[1] + ".jpg");
-		} else {										//small
-			new_src = src.replace(".jpg", "_x" + aSizes[0] + ".jpg");
+		for (var i = aSizes.length - 1; i >= 0; i--) {
+			if (physicalWidth <= aSizes[i]) {
+				new_src = src.replace(".jpg", "_x" + aSizes[i] + ".jpg");
+				break;
+			}
 		}
 		
 		return new_src;
@@ -47,9 +46,10 @@ function Images() {
 
 	function getSizes(src) {
 		var aSizes = [];
-		aSizes[0] = 1000;
-		aSizes[1] = 700;
-		aSizes[2] = 500;
+		aSizes[0] = 1400;
+		aSizes[1] = 1000;
+		aSizes[2] = 700;
+		aSizes[3] = 500;
 		return aSizes;
 	}
 

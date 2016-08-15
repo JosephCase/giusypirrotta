@@ -4,14 +4,8 @@
 					FROM page as childPage
         			inner join content
         				on content.page_id = childPage.id
-        				and childPage.url = '{$this->url_end}'";
-
-	if(count($this->url_array) == 2) {
-		// if the page has a parent directory, make sure to match that as well
-		$sql = $sql . " left join page as parentPage
-					on parentPage.id = childPage.parentPage_id            
-    				AND parentPage.url = '{$this->url_array[0]}'";
-	}
+        				and childPage.url = '{$this->url_end}'
+        				ORDER BY content.position";
 
 	
 	
@@ -32,27 +26,33 @@
         while($row = mysqli_fetch_assoc($result)) {
 
             switch ($row['type']) {
-			    case "p":
-			        echo "<p";
-			        if ($row['size'] != 0 || $row['language'] != NULL) {
-			        	echo " class='";
-			        	if ($row['size'] != 0) {
-			        		echo "p{$row['size']} ";
-			        	}
-			        	if ($row['language'] != NULL) {
-			        		echo "{$row['language']}";
-			        	}
-			        	echo "'";
-			        }
-			        echo ">{$row['content']}</p>";
-			        break;
 			    case "img":
-			        echo "<img data-img='http://gp-cms.local:8888/content/{$row['content']}' />";
+			        echo "<img data-img='http://gp-cms.local:8888/content/{$row['content']}' class='s{$row['size']}";
+			        if ($row['language'] != 'NULL') {
+			        		echo " {$row['language']}' ";
+			        	} else {
+			        		echo "' ";			        		
+			        	}
+		        	echo "/>";
+			        break;
+			    case "video":
+			        echo "<video autoplay controls class='s{$row['size']}";
+			        if ($row['language'] != 'NULL') {
+			        		echo " {$row['language']}' ";
+			        	} else {
+			        		echo "' ";			        		
+			        	}
+		        	echo "/>";
+		        	echo "<source src='http://gp-cms.local:8888/content/{$row['content']}.webm' type='video/webm' />
+			        	<source src='http://gp-cms.local:8888/content/{$row['content']}.mp4' type='video/mp4' />
+			        	</video>";
 			        break;
 		        case "text":
-		        		echo "<div";
-		        		if ($row['language'] != NULL) {
-			        		echo " class='{$row['language']}' ";
+		        		echo "<div class='s{$row['size']}";
+		        		if ($row['language'] != 'NULL') {
+			        		echo " {$row['language']}' ";
+			        	} else {
+			        		echo "' ";			        		
 			        	}
 		        		echo ">";
                         $text = Markdown::defaultTransform($row['content']);

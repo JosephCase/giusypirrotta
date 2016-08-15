@@ -5,7 +5,9 @@
                 from (SELECT id FROM `page`
                     WHERE url = '" . mysqli_real_escape_string($this->sql_connection, $this->url_end) . "') as parentPage
                         inner join page
-                            on page.parentPage_id = parentPage.id";
+                            on page.parentPage_id = parentPage.id
+                WHERE visible = true
+                ORDER BY page.position";
 
     $result = mysqli_query($this->sql_connection, $sql);
     if(!$result) {
