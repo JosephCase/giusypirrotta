@@ -16,6 +16,9 @@
 <?php
 
     echo "<link rel='stylesheet' type='text/css' href='/css/{$this->styleSheet}'>";
+    if(in_array($this->url_end, ['statement', 'bio', 'contact'])) {
+        echo "<link rel='stylesheet' type='text/css' href='/css/altTextPage.css'>";        
+    }
     if(file_exists("css/{$this->url_end}.css")) {
         echo "<link rel='stylesheet' type='text/css' href='/css/{$this->url_end}.css'>";
     }
