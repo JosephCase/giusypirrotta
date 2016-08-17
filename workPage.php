@@ -1,8 +1,67 @@
 <?php
+	use \Michelf\Markdown;
 	class WorkPage extends Page {
 		var $styleSheet = 'workPage.css';
 		function drawContent() {			
-			require_once('drawWorkPageContent.php');
+			$sql = "SELECT type, content, size, language
+					FROM page as childPage
+        			inner join content
+        				on content.page_id = childPage.id
+        				and childPage.url = '{$this->url_end}'
+        				ORDER BY content.position";	
+	
+			$result = mysqli_query($this->sql_connection, $sql);
+		    if(!$result) {
+		        die("Query failed: " . mysqli_error($this->sql_connection));
+		    }
+
+		    if (mysqli_num_rows($result) > 0) {           	
+
+		        // output data of each row
+		        while($row = mysqli_fetch_assoc($result)) {
+
+		            switch ($row['type']) {
+					    case "img":
+					        echo "<img data-img='http://gp-cms.local:8888/{$this->config->contentDirectory}/{$row['content']}' class='s{$row['size']}";
+					        if ($row['language'] != 'NULL') {
+					        		echo " {$row['language']}' ";
+					        	} else {
+					        		echo "' ";			        		
+					        	}
+				        	echo "/>";
+					        break;
+					    case "video":
+					        echo "<video autoplay controls class='s{$row['size']}";
+					        if ($row['language'] != 'NULL') {
+					        		echo " {$row['language']}' ";
+					        	} else {
+					        		echo "' ";			        		
+					        	}
+				        	echo "/>";
+				        	echo "<source src='http://gp-cms.local:8888/{$this->config->contentDirectory}/{$row['content']}.webm' type='video/webm' />
+					        	<source src='http://gp-cms.local:8888/{$this->config->contentDirectory}/{$row['content']}.mp4' type='video/mp4' />
+					        	</video>";
+					        break;
+				        case "text":
+				        		echo "<div class='text s{$row['size']}";
+				        		if ($row['language'] != 'NULL') {
+					        		echo " {$row['language']}' ";
+					        	} else {
+					        		echo "' ";			        		
+					        	}
+				        		echo ">";
+		                        $text = Markdown::defaultTransform($row['content']);
+		                        echo $text;
+		                        echo "</div>";
+		                        break;
+					    default:
+					        echo "invalid type";
+					}
+
+		        }
+		    } else {
+		        echo "<p>ERROR: NO RESULTS RETURNED</p>";
+		    }
 		}
 	}
 ?>

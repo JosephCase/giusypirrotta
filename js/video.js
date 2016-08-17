@@ -13,7 +13,7 @@ function Video(video) {
 
 	var me = this;
 	if (isPortrait()) {
-		video.className = video.className += 'portrait';
+		video.className = video.className += ' portrait';
 	}
 
 	// video.addEventListener("click", function() {

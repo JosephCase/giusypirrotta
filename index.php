@@ -5,9 +5,12 @@
         // require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
     });
 
+    //get the config
+    $str = file_get_contents('../gp-cms/config.json');
+    $config = json_decode($str, false);
+
     // Array of the section pages
     $sectionPages = ['work', 'moving-image', 'images'];
-    $noHeader = ['cv', 'bio', 'statement', 'contact'];
 
     $url = trim($_SERVER['REQUEST_URI'], '/');
     $url_array = explode('/', $url);
@@ -22,9 +25,9 @@
 
         //Check if it's a section page or a work page
         if(in_array($url_end, $sectionPages)){
-            $page = new SectionPage($url, $url_array, $url_end, $noHeader);
+            $page = new SectionPage($url, $url_array, $url_end, $config);
         } else {
-            $page = new WorkPage($url, $url_array, $url_end, $noHeader);
+            $page = new WorkPage($url, $url_array, $url_end, $config);
         }
 
         $page->draw();

@@ -1,27 +1,4 @@
-
-
 div.content {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-h2 {
-	text-align: center;
-	font-size: 26px;
-	margin-bottom: 40px;
-}
-h2.name {
-	margin-bottom: 10px;
-}
-h3 {
-	text-align: center;
-	font-size: 17px;
-	font-weight: 500;
-}
-h4 {
-	margin: 0;
-	font-size: 75px;
-}
-div.text-circle {
 	height: 1050px;
     width: 1050px;
     padding: 150px;
@@ -35,16 +12,8 @@ div.text-circle {
     margin-left: -525px;
 }
 
-.bio div.text-circle {
-	border-color: #DB1694;
-}
-
-.contact div.text-circle {
-	border-color: #DD68C8;
-}
-
-div.text-circle * {
-	   text-align: center;
+div.content .text:first-of-type {
+	text-align: center;
     position: relative;
     top: 50%;
     left: 50%;
@@ -59,36 +28,20 @@ div.text-circle * {
     padding: 0 20px;
 }
 
-p {
-	font-size: 17px;
-	font-weight: 500;
-}
-footer {
-	margin-top: 100px;
-}
-
-@media (max-width: 826px) {
-	h4 {
-		font-size: 50px;
-	}
-}
 @media (max-width: 760px) {
-	h4 {
-		font-size: 32px;
-	}
-	div.text-circle {
+	div.content {
+		position: static;
 		height: auto;
-		width: 100%;
+		width: auto;
 		padding: 40px 0;
 		border-radius: 0;
 		border-right: 	none;
 		border-bottom: 	none;
 		border-left: 	none;
-		max-width: auto;
-		position: static;
-		margin: 0;
+		max-width: none;
+		margin: 56px 20px 0 20px;
 	}
-	div.text-circle * {
+	div.content .text:first-of-type {
 		-moz-transform: none;
 		-ms-transform: none;
 		-webkit-transform: none;
@@ -97,9 +50,5 @@ footer {
 		padding: 0;
 		position: static;
 		text-align: justify;
-	}
-	div.text-circle h2 {
-		text-align: center;
-		padding-top: 140px;
 	}
 }

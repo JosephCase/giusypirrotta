@@ -4,26 +4,22 @@
 		var $url;
 		var $url_array;
 		var $url_end;
-		var $noHeader;
+		var $config;
 		var $sql_connection;
 		var $section = '';
 		var $styleSheet = '';
 
-		function __construct($url, $url_array, $url_end, $noHeader) {
+		function __construct($url, $url_array, $url_end, $config) {
 		   $this->url = $url;
 		   $this->url_array = $url_array;
 		   $this->url_end = $url_end;
-		   $this->noHeader = $noHeader;
+		   $this->config = $config;
 		   $this->sql_connection = $this->getSQLConnection();
 		}
 
 		function getSQLConnection() {
-			$servername = "50.62.209.149:3306";
-			$username = "JosephCase";
-			$password = "Ls962_aj";
-			$database = "giusy_test";
 
-			$conn = mysqli_connect($servername, $username, $password, $database);
+			$conn = mysqli_connect($this->config->databaseLogin->host, $this->config->databaseLogin->user, $this->config->databaseLogin->password, $this->config->databaseLogin->database);
 			// Check connection
 			if (!$conn) {
 			    die("Connection failed: " . mysqli_connect_error());
@@ -41,18 +37,15 @@
 
 			$this->drawHead();
 
-			echo "<body class='eng'><div class='content'>";
+			echo "<body class='eng'>";
 
 			$this->drawHeader();
+			echo "<div class='content'>";
 			$this->drawContent();
+			echo "</div>";
 			$this->drawFooter();
 
-		    // require_once 'head.php';
-			// require_once("header.php");
-   			//workPageContent::draw($this->url, $this->url_array, $this->url_end, $this->sql_connection, $this->noHeader);
-			// require_once("footer.php");
-
-			echo "</div></body></html>";
+			echo "</body></html>";
 		}
 
 		function drawHead() {
