@@ -77,6 +77,7 @@ body {
 	padding-top: 56px;
 	margin: 0 auto;
 	position: relative;
+	overflow: auto;
 }
 
 h1.title {
@@ -155,7 +156,11 @@ img.loaded {
 	opacity: 1;
 }
 
-
+.errorMsg {
+	text-align: center;
+	margin: 100px 0;
+	font-size: 26px;
+}
 
 
 

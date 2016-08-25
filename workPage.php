@@ -16,7 +16,7 @@
 		    				AND parentPage.url = '{$this->url_array[0]}'";
 			}
 
-			$sql = $sql . " ORDER BY content.position";
+			$sql = $sql . " WHERE childPage.visible = 1 ORDER BY content.position";
 
 			$result = mysqli_query($this->sql_connection, $sql);
 		    if(!$result) {
@@ -68,7 +68,7 @@
 
 		        }
 		    } else {
-		        echo "<p>ERROR: NO RESULTS RETURNED</p>";
+		        echo "<h2 class='errorMsg'>PAGE NOT FOUND</h2>";
 		    }
 		}
 	}

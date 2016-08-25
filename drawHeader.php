@@ -8,7 +8,7 @@
 <p class="navigation">
 <?php 	
 
-	$sql = "SELECT name, url FROM `navigation`\n" . "inner join page\n" . " on navigation.page_id = page.id";
+	$sql = "SELECT name, url FROM `navigation`\n" . "inner join page\n" . " on navigation.page_id = page.id where page.visible = 1 OR page.isParent = 1";
 
 	$result = mysqli_query($this->sql_connection, $sql);
 	if(!$result) {

@@ -6,13 +6,17 @@ function Images() {
 
 	var aImages = document.getElementsByTagName('img');
 	
-	
 	if(aImages.length != 0) {
 		showImage(0); // show the first image
 	}
+	
 
 	//Loop through images in order
 	function showImage(i) {
+
+		// window.getComputedStyle(element),newElement={width:elementStyle.getPropertyValue("width").replace("px",""),height:elementStyle.getPropertyValue("height"
+
+
 		aImages[i].src = chooseSize(aImages[i].getAttribute('data-img'), aImages[i].clientWidth);
 		aImages[i].addEventListener("load", function() {
 			this.className = this.className + ' loaded';
@@ -32,6 +36,9 @@ function Images() {
 		var physicalWidth = calculatePhysicalWidth(width);
 
 		var new_src;
+
+		console.log(width);
+		console.log(physicalWidth);
 
 		for (var i = aSizes.length - 1; i >= 0; i--) {
 			if (physicalWidth <= aSizes[i]) {

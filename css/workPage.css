@@ -12,6 +12,9 @@ body {
 	margin-left: 1%;
 	margin-right: 1%;
 	box-sizing: border-box;
+	float: left;
+	display: block;
+	width: 98%;
 }
 
 .content h1 {
@@ -91,6 +94,9 @@ video.s1 {
 }
 
 img + .text {
+	margin-top: 50px;
+}
+img + .text + .text {	/*this is if there is a second language text*/
 	margin-top: 50px;
 }
 

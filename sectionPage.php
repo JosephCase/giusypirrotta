@@ -28,6 +28,8 @@
 	                </a>";
 
 		        }
+		    } else {
+		        echo "<h2 class='errorMsg'>SECTION HAS NO PAGES</h2>";
 		    }
 		}
 	}
