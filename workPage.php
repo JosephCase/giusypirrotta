@@ -7,9 +7,17 @@
 					FROM page as childPage
         			inner join content
         				on content.page_id = childPage.id
-        				and childPage.url = '{$this->url_end}'
-        				ORDER BY content.position";	
-	
+        				and childPage.url = '{$this->url_end}'";
+
+			if(count($this->url_array) == 2) {
+				// if the page has a parent directory, make sure to match that as well
+				$sql = $sql . " inner join page as parentPage
+							on parentPage.id = childPage.parentPage_id            
+		    				AND parentPage.url = '{$this->url_array[0]}'";
+			}
+
+			$sql = $sql . " ORDER BY content.position";
+
 			$result = mysqli_query($this->sql_connection, $sql);
 		    if(!$result) {
 		        die("Query failed: " . mysqli_error($this->sql_connection));
