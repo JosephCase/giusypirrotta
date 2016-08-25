@@ -1,7 +1,7 @@
 <?php
     
     spl_autoload_register(function($class){
-        include(__DIR__ . '\\' . $class . '.php');
+        include(__DIR__ . '/' . $class . '.php');
         // require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
     });
 
