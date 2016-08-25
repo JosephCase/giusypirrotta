@@ -136,11 +136,11 @@ footer p {
 }
 
 body.ita .eng {
-		display: none;
+	display: none;
 }
 
 body.eng .ita {
-		display: none;
+	display: none;
 }
 
 img {

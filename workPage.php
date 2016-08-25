@@ -30,7 +30,7 @@
 
 		            switch ($row['type']) {
 					    case "img":
-					        echo "<img data-img='http://gp-cms.local:8888/{$this->config->contentDirectory}/{$row['content']}' class='s{$row['size']}";
+					        echo "<img data-img='{$this->config->contentDirectory}/{$row['content']}' class='s{$row['size']}";
 					        if ($row['language'] != 'NULL') {
 					        		echo " {$row['language']}' ";
 					        	} else {
@@ -46,8 +46,8 @@
 					        		echo "' ";			        		
 					        	}
 				        	echo "/>";
-				        	echo "<source src='http://gp-cms.local:8888/{$this->config->contentDirectory}/{$row['content']}.webm' type='video/webm' />
-					        	<source src='http://gp-cms.local:8888/{$this->config->contentDirectory}/{$row['content']}.mp4' type='video/mp4' />
+				        	echo 	"<source src='{$this->config->contentDirectory}/{$row['content']}.webm' type='video/webm' />
+					        		<source src='{$this->config->contentDirectory}/{$row['content']}.mp4' type='video/mp4' />
 					        	</video>";
 					        break;
 				        case "text":

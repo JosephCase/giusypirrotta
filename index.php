@@ -6,7 +6,7 @@
     });
 
     //get the config
-    $str = file_get_contents('../gp-cms/config.json');
+    $str = file_get_contents('config.json');
     $config = json_decode($str, false);
 
     // Array of the section pages
