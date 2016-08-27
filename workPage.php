@@ -1,5 +1,5 @@
 <?php
-	use \Michelf\Markdown;
+	use Michelf\Markdown as Markdown;
 	class WorkPage extends Page {
 		var $styleSheet = 'workPage.css';
 		function drawContent() {			
