@@ -84,9 +84,9 @@ video.s1 {
     margin: 1%;
 }
 
-.content .s2:first-of-type, .content .s3:first-of-type, .content .s4:first-of-type {
+/*.content .s2:first-of-type, .content .s3:first-of-type, .content .s4:first-of-type {
 	margin-top: 20px;
-}
+}*/
 
 .content video {
 	max-height: 95vh;
@@ -98,6 +98,11 @@ img + .text {
 }
 img + .text + .text {	/*this is if there is a second language text*/
 	margin-top: 50px;
+}
+
+.text a {
+	color: -webkit-link;
+    text-decoration: underline;
 }
 
 footer {
