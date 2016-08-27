@@ -127,12 +127,13 @@ footer p {
 .lang {
 	cursor: pointer;
 	position: fixed;
-	right: 32px;
+	right: 20px;
 	top: 0;
 	padding: 4px;
 	font-size: 17px;
 	font-weight: 600;
 	padding-top: 20px;
+	z-index: 10;
 	/*background-color: rgba(300,300,300,0.6);*/
 }
 
