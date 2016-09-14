@@ -520,7 +520,7 @@ class Markdown implements MarkdownInterface {
 	
 	protected function doHardBreaks($text) {
 		# Do hard breaks:
-		return preg_replace_callback('/ {2,}\n/', 
+		return preg_replace_callback('/ {2,}\n|\n{1}/', 
 			array($this, '_doHardBreaks_callback'), $text);
 	}
 	protected function _doHardBreaks_callback($matches) {
