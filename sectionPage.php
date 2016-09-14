@@ -8,7 +8,7 @@
 		                        inner join page
 		                            on page.parentPage_id = parentPage.id
 		                WHERE visible = true
-		                ORDER BY page.position";
+		                ORDER BY page.position, page.id DESC";
 
 		    $result = mysqli_query($this->sql_connection, $sql);
 		    if(!$result) {

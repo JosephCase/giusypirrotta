@@ -12,7 +12,7 @@ div.content {
     margin-left: -525px;
 }
 
-div.content .text:first-of-type {
+div.content .text {
 	text-align: center;
     position: relative;
     top: 50%;

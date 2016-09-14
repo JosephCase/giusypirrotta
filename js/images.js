@@ -13,10 +13,7 @@ function Images() {
 
 	//Loop through images in order
 	function showImage(i) {
-
-		// window.getComputedStyle(element),newElement={width:elementStyle.getPropertyValue("width").replace("px",""),height:elementStyle.getPropertyValue("height"
-
-
+		
 		aImages[i].src = chooseSize(aImages[i].getAttribute('data-img'), aImages[i].clientWidth);
 		aImages[i].addEventListener("load", function() {
 			this.className = this.className + ' loaded';
