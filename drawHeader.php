@@ -1,5 +1,5 @@
-<p class="lang ita" onclick="Language.changeLanguage();">ENG</p>
-<p class="lang eng" onclick="Language.changeLanguage();">ITA</p>
+<p class="lang eng" onclick="Language.changeLanguage();">ENG</p>
+<p class="lang ita" onclick="Language.changeLanguage();">ITA</p>
 
 <?php 
 	echo "<h1 class='title'><a href='/'>Giusy Pirrotta</a></h1>";
