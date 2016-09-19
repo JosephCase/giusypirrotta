@@ -67,7 +67,7 @@ html {
 
 body {
 	background-color: #fff;
-	overflow-x: hidden;
+	overflow-x: visible;
 	position: relative;
 }
 
