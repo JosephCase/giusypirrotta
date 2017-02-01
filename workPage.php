@@ -58,7 +58,8 @@
 					        		echo "' ";			        		
 					        	}
 				        		echo ">";
-		                        $text = Markdown::defaultTransform($row['content']);
+				        		$text = str_replace ( "&#10;" , "\n" , $row['content'] );
+		                        $text = Markdown::defaultTransform($text);
 		                        echo $text;
 		                        echo "</div>";
 		                        break;
