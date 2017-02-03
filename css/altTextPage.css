@@ -41,7 +41,7 @@ div.content .text {
 		max-width: none;
 		margin: 56px 20px 0 20px;
 	}
-	div.content .text:first-of-type {
+	div.content .text {
 		-moz-transform: none;
 		-ms-transform: none;
 		-webkit-transform: none;
