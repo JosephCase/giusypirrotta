@@ -22,7 +22,6 @@ function Images() {
 			}
 		}, false);
 		aImages[i].addEventListener('error', function() {
-			console.log(this.src);
 			this.src = '/image/placeholder.gif';
 		})
 	}
@@ -33,9 +32,6 @@ function Images() {
 		var physicalWidth = calculatePhysicalWidth(width);
 
 		var new_src;
-
-		console.log(width);
-		console.log(physicalWidth);
 
 		for (var i = aSizes.length - 1; i >= 0; i--) {
 			if (physicalWidth <= aSizes[i]) {
@@ -69,7 +65,6 @@ function Images() {
 	    http.open('HEAD', image_url, false);
 	    http.send();
 
-	    console.log(http.status != 404);
 	    return http.status != 404;
 
 	}
